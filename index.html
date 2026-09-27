@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="sancara-icon.png">
+    <link rel="apple-touch-icon" href="sancara-icon.png">
+    <link rel="canonical" href="https://www.sancara.co.zw/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sancara | Specialty &amp; Emerging Risk Solutions">
+    <meta property="og:description" content="Sancara helps organisations understand, anticipate and respond to complex and emerging risks through specialist claims, insurance process intelligence, automation, climate risk and sustainability expertise.">
+    <meta property="og:url" content="https://www.sancara.co.zw/">
+    <meta property="og:image" content="https://www.sancara.co.zw/sancara-icon.png">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -17,7 +25,8 @@
         "name": "Sancara",
         "slogan": "Specialty & Emerging Risk Solutions",
         "description": "Sancara helps organisations understand, anticipate and respond to complex and emerging risks — from complex losses and disruption to changing climate exposure and risk-process transformation.",
-        "email": "intelligence@sancara-group.africa",
+        "email": ["info@sancara.co.zw", "intelligence@sancara.co.zw"],
+        "url": "https://www.sancara.co.zw/",
         "areaServed": "Southern Africa",
         "knowsAbout": ["Complex Claims", "Specialty Claims", "Loss Assessment", "Business Interruption", "Insurance Process Automation", "AI for Insurance", "Climate Risk Assessment", "Sustainability", "ESG", "Resilience", "Emerging Risk"],
         "makesOffer": [
@@ -32,7 +41,27 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Sancara",
-        "url": "https://www.sancara-group.africa/"
+        "url": "https://www.sancara.co.zw/"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "What is a complex or specialty claim?", "acceptedAnswer": {"@type": "Answer", "text": "A claim involving multiple causes, technical uncertainty, significant business interruption, difficult quantification or emerging loss drivers — where a standard claims process alone cannot produce a defensible answer. Sancara brings the technical picture together: investigation, causation, assessment and quantum."}},
+            {"@type": "Question", "name": "When should an insurer, broker or risk owner bring Sancara in?", "acceptedAnswer": {"@type": "Answer", "text": "Early — ideally at notification or first reserve-setting for large or unusual losses. Early technical involvement protects the evidence, frames the right questions and reduces the risk of positions hardening on incomplete information."}},
+            {"@type": "Question", "name": "What does the claims process involve?", "acceptedAnswer": {"@type": "Answer", "text": "Four stages: Understand (what happened?), Assess (what was affected?), Quantify (what is the impact?) and Inform (what does the evidence support?). Each stage is documented so decisions can be defended."}},
+            {"@type": "Question", "name": "Does the Business Interruption Calculator replace a loss assessment?", "acceptedAnswer": {"@type": "Answer", "text": "No. The calculator is an indicative planning and educational tool only — not a formal claims valuation or loss-adjustment assessment. Actual BI losses depend on policy terms, trends, mitigation, increased cost of working and many other factors."}},
+            {"@type": "Question", "name": "What is insurance process intelligence?", "acceptedAnswer": {"@type": "Answer", "text": "The disciplined mapping and analysis of how insurance work actually flows — people, documents, systems, decisions — so that improvement and automation are grounded in reality rather than assumption."}},
+            {"@type": "Question", "name": "Which processes are good automation candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Repetitive, rules-based, high-volume activities: document intake, data extraction, claims triage, workflow routing, status updates, report preparation, information requests and repetitive administration. Judgement-heavy work is supported, not replaced."}},
+            {"@type": "Question", "name": "Does Sancara sell AI products?", "acceptedAnswer": {"@type": "Answer", "text": "Sancara is not a generic AI vendor. We combine insurance and risk expertise, process understanding and technology. Capabilities such as claims document intelligence, triage support and AI-assisted report preparation are areas of active development — described as emerging capabilities, not mature commercial products."}},
+            {"@type": "Question", "name": "How do you avoid overpromising on AI?", "acceptedAnswer": {"@type": "Answer", "text": "Our methodology — Map, Identify, Transform, Automate, Verify — tests each automation or AI application against real workflow data and measured outcomes before scaling. If the evidence does not support it, we say so."}},
+            {"@type": "Question", "name": "What is a climate risk assessment?", "acceptedAnswer": {"@type": "Answer", "text": "A structured examination of how climate-related hazards could affect your assets, operations and organisation: hazard identification, exposure and vulnerability considerations, impact analysis and risk prioritisation — followed by adaptation and resilience options."}},
+            {"@type": "Question", "name": "Is the screening tool on this page a climate model?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Indicative Climate Risk Exposure Screening is a qualitative screening aid only — not a site-specific climate model, engineering assessment or catastrophe-risk assessment. It generates no risk scores; a meaningful assessment requires asset-level information and appropriate data."}},
+            {"@type": "Question", "name": "What does climate scenario and risk analysis add?", "acceptedAnswer": {"@type": "Answer", "text": "Scenarios explore how changing conditions — different climate pathways and time horizons — could alter future exposure, so decisions made today remain defensible under a range of plausible futures rather than a single forecast."}},
+            {"@type": "Question", "name": "How does this relate to ESG and sustainability reporting?", "acceptedAnswer": {"@type": "Answer", "text": "Climate and sustainability risk analysis produces the information organisations need for ESG reporting, sustainability strategy and resilience planning — turning disclosure obligations into better internal decisions."}}
+        ]
     }
     </script>
     <style>
@@ -189,6 +218,21 @@
         .checkbox-item:hover { background: rgba(254, 193, 14, 0.1); }
         .checkbox-item input { width: 16px; height: 16px; accent-color: var(--gold-deep); }
 
+
+        .logo-img { height: 42px; width: 42px; object-fit: cover; border-radius: 10px; transition: transform 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+        .logo:hover .logo-img { transform: scale(1.05); }
+        .hero-emblem-img { object-fit: cover; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+        .faq-item { background: var(--white); border: 1px solid rgba(19,51,86,0.08); border-radius: 10px; margin-bottom: 1rem; overflow: hidden; transition: border-color 0.3s; }
+        .faq-item:hover { border-color: rgba(254,193,14,0.4); }
+        .faq-item summary { padding: 1.2rem 1.5rem; font-weight: 600; color: var(--navy); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: 'Inter', sans-serif; font-size: 0.98rem; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; color: var(--gold-deep); font-size: 1.3rem; font-weight: 700; flex-shrink: 0; }
+        .faq-item[open] summary::after { content: '2'; }
+        .faq-item p { padding: 0 1.5rem 1.25rem; color: var(--steel); font-size: 0.93rem; }
+        .flywheel { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: center; margin-top: 1.5rem; }
+        .flywheel span { background: rgba(255,255,255,0.06); border: 1px solid rgba(254,193,14,0.25); color: var(--metallic-light); padding: 0.4rem 0.85rem; border-radius: 20px; font-size: 0.78rem; font-weight: 500; }
+        .flywheel i { color: var(--gold); font-size: 0.7rem; }
+
         /* ── Contact ────────────────────────────────── */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
         .contact-info-item { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
@@ -290,11 +334,7 @@
 <nav class="navbar" id="navbar" aria-label="Main navigation">
     <div class="nav-container">
         <a class="logo" onclick="showPage('home')" role="link" tabindex="0" aria-label="Sancara home">
-            <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <circle cx="50" cy="50" r="46" fill="none" stroke="#FEC10E" stroke-width="4"/>
-                <circle cx="50" cy="50" r="38" fill="#0A1F35"/>
-                <path d="M62 38c-3-4-8-6-13-6-8 0-14 5-14 12 0 15 28 8 28 22 0 7-6 12-14 12-6 0-11-2-14-7" fill="none" stroke="#FEC10E" stroke-width="6" stroke-linecap="round"/>
-            </svg>
+            <img src="sancara-icon.png" alt="Sancara" class="logo-img">
             <span class="logo-word">SANC<span>ARA</span></span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -325,16 +365,7 @@
     <section class="hero">
         <div class="hero-bg-animation" id="heroBg"></div>
         <div class="hero-content">
-            <svg class="hero-emblem" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sancara emblem">
-                <defs>
-                    <linearGradient id="goldRing" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#FFE066"/><stop offset="50%" stop-color="#FEC10E"/><stop offset="100%" stop-color="#E5A800"/>
-                    </linearGradient>
-                </defs>
-                <circle cx="50" cy="50" r="47" fill="none" stroke="url(#goldRing)" stroke-width="3"/>
-                <circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.04)" stroke="rgba(184,196,208,0.25)" stroke-width="1"/>
-                <path d="M63 37c-3-4-8-6-13-6-8 0-14 5-14 12 0 15 28 8 28 22 0 7-6 12-14 12-6 0-11-2-14-7" fill="none" stroke="url(#goldRing)" stroke-width="6" stroke-linecap="round"/>
-            </svg>
+            <img src="sancara-icon.png" alt="Sancara emblem" class="hero-emblem hero-emblem-img">
             <div class="hero-tagline">Specialty &amp; Emerging Risk Solutions</div>
             <h1>Understand what is changing.<br>Respond with confidence.</h1>
             <p class="hero-subtitle">Sancara helps organisations understand, anticipate and respond to complex and emerging risks — from complex losses and disruption to changing climate exposure and risk-process transformation.</p>
@@ -611,6 +642,28 @@
     </section>
 
     <!-- BI Calculator -->
+    <section class="section" id="faq-claims">
+        <div class="section-header animate-on-scroll">
+            <div class="eyebrow">Common Questions</div>
+            <h2>Specialty &amp; Emerging Risk Claims — FAQs</h2>
+            <div class="gold-line"></div>
+        </div>
+        <div style="max-width: 850px; margin: 0 auto;">
+            <details class="faq-item animate-on-scroll"><summary>What is a complex or specialty claim?</summary><p>A claim involving multiple causes, technical uncertainty, significant business interruption, difficult quantification or emerging loss drivers — where a standard claims process alone cannot produce a defensible answer. Sancara brings the technical picture together: investigation, causation, assessment and quantum.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>When should an insurer, broker or risk owner bring Sancara in?</summary><p>Early — ideally at notification or first reserve-setting for large or unusual losses. Early technical involvement protects the evidence, frames the right questions and reduces the risk of positions hardening on incomplete information.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>What does the claims process involve?</summary><p>Four stages: Understand (what happened?), Assess (what was affected?), Quantify (what is the impact?) and Inform (what does the evidence support?). Each stage is documented so decisions can be defended.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>Does the Business Interruption Calculator replace a loss assessment?</summary><p>No. The calculator is an indicative planning and educational tool only — not a formal claims valuation or loss-adjustment assessment. Actual BI losses depend on policy terms, trends, mitigation, increased cost of working and many other factors.</p></details>
+        </div>
+    </section>
+    <section class="dark-band">
+        <div class="dark-band-inner animate-on-scroll">
+            <div class="eyebrow">Diagnostic Pathway</div>
+            <h2>Complex Claims Review</h2>
+            <p style="margin-bottom: 2rem;">For organisations dealing with a technically complex or difficult loss. A structured diagnostic to establish what happened, what was affected and what the evidence supports — before positions harden and costs escalate.</p>
+            <button class="btn btn-primary" onclick="selectEnquiryType('Specialty &amp; Emerging Risk Claims')"><i class="fas fa-file-invoice-dollar"></i> Start a Complex Claims Review</button>
+        </div>
+    </section>
+
     <section class="bg-alt" id="bi-tool">
         <div class="section">
             <div class="tool-container animate-on-scroll">
@@ -717,6 +770,28 @@
     </section>
     <section class="dark-band">
         <div class="dark-band-inner animate-on-scroll">
+            <div class="eyebrow">Diagnostic Pathway</div>
+            <h2>Insurance Process Automation Assessment</h2>
+            <p style="margin-bottom: 2rem;">For organisations trying to identify manual, repetitive or inefficient insurance processes. A structured assessment of where process intelligence, automation or practical AI would genuinely add value — and where it would not.</p>
+            <button class="btn btn-primary" onclick="selectEnquiryType('Insurance Process Intelligence &amp; Automation')"><i class="fas fa-gears"></i> Explore an Insurance Process</button>
+        </div>
+    </section>
+
+    <section class="section" id="faq-process">
+        <div class="section-header animate-on-scroll">
+            <div class="eyebrow">Common Questions</div>
+            <h2>Insurance Process Intelligence &amp; Automation — FAQs</h2>
+            <div class="gold-line"></div>
+        </div>
+        <div style="max-width: 850px; margin: 0 auto;">
+            <details class="faq-item animate-on-scroll"><summary>What is insurance process intelligence?</summary><p>The disciplined mapping and analysis of how insurance work actually flows — people, documents, systems, decisions — so that improvement and automation are grounded in reality rather than assumption.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>Which processes are good automation candidates?</summary><p>Repetitive, rules-based, high-volume activities: document intake, data extraction, claims triage, workflow routing, status updates, report preparation, information requests and repetitive administration. Judgement-heavy work is supported, not replaced.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>Does Sancara sell AI products?</summary><p>Sancara is not a generic AI vendor. We combine insurance and risk expertise, process understanding and technology. Capabilities such as claims document intelligence, triage support and AI-assisted report preparation are areas of active development — they are described as emerging capabilities, not mature commercial products.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>How do you avoid overpromising on AI?</summary><p>Our methodology — Map, Identify, Transform, Automate, Verify — tests each automation or AI application against real workflow data and measured outcomes before scaling. If the evidence does not support it, we say so.</p></details>
+        </div>
+    </section>
+    <section class="dark-band">
+        <div class="dark-band-inner animate-on-scroll">
             <h2>Have a process that slows the team down?</h2>
             <p>Tell us what you're dealing with. We'll identify where process intelligence, automation or practical AI could help — and where it shouldn't.</p>
             <button class="btn btn-primary" onclick="showPage('contact')"><i class="fas fa-gears"></i> Explore an Insurance Process</button>
@@ -765,6 +840,28 @@
     </section>
 
     <!-- Climate Risk Exposure Screening -->
+    <section class="section" id="faq-climate">
+        <div class="section-header animate-on-scroll">
+            <div class="eyebrow">Common Questions</div>
+            <h2>Sustainability &amp; Climate Risk — FAQs</h2>
+            <div class="gold-line"></div>
+        </div>
+        <div style="max-width: 850px; margin: 0 auto;">
+            <details class="faq-item animate-on-scroll"><summary>What is a climate risk assessment?</summary><p>A structured examination of how climate-related hazards could affect your assets, operations and organisation: hazard identification, exposure and vulnerability considerations, impact analysis and risk prioritisation — followed by adaptation and resilience options.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>Is the screening tool on this page a climate model?</summary><p>No. The Indicative Climate Risk Exposure Screening is a qualitative screening aid only — not a site-specific climate model, engineering assessment or catastrophe-risk assessment. It generates no risk scores; a meaningful assessment requires asset-level information and appropriate data.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>What does climate scenario and risk analysis add?</summary><p>Scenarios explore how changing conditions — different climate pathways and time horizons — could alter future exposure, so decisions made today remain defensible under a range of plausible futures rather than a single forecast.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>How does this relate to ESG and sustainability reporting?</summary><p>Climate and sustainability risk analysis produces the information organisations need for ESG reporting, sustainability strategy and resilience planning — turning disclosure obligations into better internal decisions.</p></details>
+        </div>
+    </section>
+    <section class="dark-band">
+        <div class="dark-band-inner animate-on-scroll">
+            <div class="eyebrow">Diagnostic Pathway</div>
+            <h2>Climate Risk Exposure Assessment</h2>
+            <p style="margin-bottom: 2rem;">For organisations seeking an initial understanding of climate-related exposure. A structured assessment that moves beyond indicative screening to examine exposure, vulnerability, impact and response options for your specific assets and operations.</p>
+            <button class="btn btn-primary" onclick="selectEnquiryType('Sustainability &amp; Climate Risk')"><i class="fas fa-cloud-sun-rain"></i> Assess Your Climate Risk</button>
+        </div>
+    </section>
+
     <section class="bg-alt" id="climate-tool">
         <div class="section">
             <div class="tool-container animate-on-scroll">
@@ -855,6 +952,7 @@
             <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div><h3>Climate &amp; Sustainability</h3><p>Climate Risk Brief · Sustainability Insight · Climate Signal · Resilience Note</p></div>
         </div>
         <div class="filter-buttons animate-on-scroll">
+        <p class="animate-on-scroll" style="text-align: center; color: var(--steel); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--navy);">Featured formats:</strong> Sancara Risk Brief &nbsp;·&nbsp; Sancara Field Note &nbsp;·&nbsp; Sancara Emerging Risk Report &nbsp;·&nbsp; Sancara Claims Insight</p>
             <button class="filter-btn active" onclick="filterInsights('all', this)">All Streams</button>
             <button class="filter-btn" onclick="filterInsights('claims', this)">Claims &amp; Emerging Risk</button>
             <button class="filter-btn" onclick="filterInsights('tech', this)">Insurance Technology &amp; AI</button>
@@ -887,6 +985,26 @@
             </div>
         </div>
         <p class="animate-on-scroll" style="text-align: center; color: var(--steel); font-size: 0.85rem; margin-top: 2rem;">New insights are published as they are developed. Sancara does not publish fabricated statistics, dates or research findings.</p>
+    </section>
+    <section class="dark-band">
+        <div class="dark-band-inner animate-on-scroll">
+            <div class="eyebrow">The Sancara Operating Model</div>
+            <h2>How insight becomes engagement.</h2>
+            <p>Insight is not an end in itself — it feeds a cycle that connects market signals to client work and back again.</p>
+            <div class="flywheel">
+                <span>Market / Risk Signal</span><i class="fas fa-arrow-right"></i>
+                <span>Sancara Insight</span><i class="fas fa-arrow-right"></i>
+                <span>Search / Social / Outbound</span><i class="fas fa-arrow-right"></i>
+                <span>Website</span><i class="fas fa-arrow-right"></i>
+                <span>Diagnostic / Briefing</span><i class="fas fa-arrow-right"></i>
+                <span>Consultation</span><i class="fas fa-arrow-right"></i>
+                <span>Project</span><i class="fas fa-arrow-right"></i>
+                <span>Client Experience</span><i class="fas fa-arrow-right"></i>
+                <span>Case / Insight / Data</span><i class="fas fa-arrow-right"></i>
+                <span>New Content</span><i class="fas fa-arrow-right"></i>
+                <span>Market</span>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -968,7 +1086,14 @@
         <div class="contact-grid">
             <div class="animate-on-scroll">
                 <div class="section-header" style="text-align: left; margin-bottom: 2rem;"><h2 style="font-size: 1.6rem;">Get in touch.</h2><div class="gold-line" style="margin: 1rem 0;"></div></div>
-                <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-details"><h4>Email</h4><p>intelligence@sancara-group.africa</p></div></div>
+                <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-details"><h4>General Email</h4><p><a href="mailto:info@sancara.co.zw" style="color: var(--steel);">info@sancara.co.zw</a></p></div></div>
+                <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-brain"></i></div><div class="contact-details"><h4>Intelligence / Insights</h4><p><a href="mailto:intelligence@sancara.co.zw" style="color: var(--steel);">intelligence@sancara.co.zw</a></p></div></div>
+                <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-globe"></i></div><div class="contact-details"><h4>Website</h4><p><a href="https://www.sancara.co.zw" target="_blank" rel="noopener" style="color: var(--steel);">www.sancara.co.zw</a></p></div></div>
+                <div class="contact-info-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div class="contact-details"><h4>WhatsApp</h4><p><a href="https://wa.me/263787117461" target="_blank" rel="noopener" style="color: var(--steel);">+263 787 117 461</a></p></div></div>
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                    <a class="btn btn-primary btn-sm" href="https://wa.me/263787117461" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                    <a class="btn btn-secondary btn-sm" href="mailto:info@sancara.co.zw" style="color: var(--navy); border-color: rgba(19,51,86,0.3);"><i class="fas fa-envelope"></i> Email Us</a>
+                </div>
                 <div class="section-header" style="text-align: left; margin: 3rem 0 2rem;"><h2 style="font-size: 1.6rem;">What happens next.</h2><div class="gold-line" style="margin: 1rem 0;"></div></div>
                 <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-magnifying-glass"></i></div><div class="contact-details"><h4>01 — Understand</h4><p>We establish the problem, context and available evidence.</p></div></div>
                 <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-list-check"></i></div><div class="contact-details"><h4>02 — Assess</h4><p>We identify the right Sancara capability and the relevant constraints.</p></div></div>
@@ -985,7 +1110,7 @@
                         <div class="form-group"><label for="ctOrg">Organisation</label><input type="text" id="ctOrg" placeholder="Company / organisation"></div>
                         <div class="form-row">
                             <div class="form-group"><label for="ctEmail">Email</label><input type="email" id="ctEmail" required placeholder="you@company.com"></div>
-                            <div class="form-group"><label for="ctPhone">Phone</label><input type="tel" id="ctPhone" placeholder="+263 ..."></div>
+                            <div class="form-group"><label for="ctPhone">Phone / WhatsApp</label><input type="tel" id="ctPhone" placeholder="Optional"></div>
                         </div>
                         <div class="form-group"><label for="ctType">Enquiry Type (optional)</label>
                             <select id="ctType">
@@ -1013,6 +1138,12 @@
             <h3>SANCARA</h3>
             <div class="footer-tagline">Specialty &amp; Emerging Risk Solutions</div>
             <p>Helping organisations understand, anticipate and respond to complex and emerging risks.</p>
+            <p style="margin-top: 1.25rem; line-height: 2;">
+                <a href="mailto:info@sancara.co.zw" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-envelope" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>info@sancara.co.zw</a><br>
+                <a href="mailto:intelligence@sancara.co.zw" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-brain" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>intelligence@sancara.co.zw</a><br>
+                <a href="https://www.sancara.co.zw" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-globe" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>www.sancara.co.zw</a><br>
+                <a href="https://wa.me/263787117461" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fab fa-whatsapp" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>+263 787 117 461</a>
+            </p>
             <p style="margin-top: 1rem;"><i class="fas fa-location-dot" style="color: var(--gold); margin-right: 0.4rem;"></i>Based in Southern Africa.</p>
         </div>
         <div class="footer-links">
@@ -1230,24 +1361,29 @@
         setTimeout(function () { addMsg(botReply(msg.toLowerCase()), 'bot'); }, 500);
     }
     function botReply(msg) {
-        var claims = ['claim', 'loss', 'damage', 'business interruption', 'bi ', 'quantum', 'adjuster', 'fire', 'flood claim', 'theft'];
+        var claims = ['claim', 'loss', 'damage', 'business interruption', 'bi ', 'quantum', 'adjuster', 'fire', 'flood claim', 'theft', 'complex'];
         var process = ['process', 'automation', 'automate', 'workflow', 'ai', 'manual work', 'efficien', 'triage', 'document', 'system'];
         var climate = ['climate', 'esg', 'sustainab', 'carbon', 'resilien', 'adapt', 'environment', 'weather', 'heat', 'drought', 'reporting'];
+        var contact = ['contact', 'whatsapp', 'email', 'phone', 'call', 'human', 'person', 'speak', 'talk to'];
         function hasAny(arr) { return arr.some(function (k) { return msg.indexOf(k) !== -1; }); }
+        var routes = '<br><br>You can also reach us directly: <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> · <a href="mailto:intelligence@sancara.co.zw">intelligence@sancara.co.zw</a> · <a href="https://wa.me/263787117461" target="_blank" rel="noopener">WhatsApp +263 787 117 461</a>';
 
+        if (hasAny(contact)) {
+            return 'You can reach the Sancara team directly: <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> (general) or <a href="mailto:intelligence@sancara.co.zw">intelligence@sancara.co.zw</a> (insights). For a quick response, message us on <a href="https://wa.me/263787117461" target="_blank" rel="noopener">WhatsApp +263 787 117 461</a>.';
+        }
         if (hasAny(claims)) {
-            return 'It sounds like a <strong>complex claim</strong>. Sancara\u2019s Specialty &amp; Emerging Risk Claims practice provides technical investigation, emerging and climate-related loss assessment, and loss quantification. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Discuss a Complex Claim</a>. You can also try the indicative Business Interruption Calculator on the Claims page.';
+            return 'It sounds like a <strong>complex claim</strong>. Sancara\u2019s Specialty &amp; Emerging Risk Claims practice provides technical investigation, emerging and climate-related loss assessment, and loss quantification — starting with a <strong>Complex Claims Review</strong> if you\u2019re unsure where to begin. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Discuss a Complex Claim</a>.' + routes;
         }
         if (hasAny(process)) {
-            return 'It sounds like an <strong>insurance process</strong> challenge. Our Insurance Process Intelligence &amp; Automation practice helps identify and automate repetitive claims and workflow activities, and explores practical AI where it genuinely adds value. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Explore an Insurance Process</a>.';
+            return 'It sounds like an <strong>insurance process</strong> challenge. Our Insurance Process Intelligence &amp; Automation practice identifies manual, repetitive or inefficient processes and applies automation or practical AI where it genuinely adds value — starting with an <strong>Insurance Process Automation Assessment</strong>. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Explore an Insurance Process</a>.' + routes;
         }
         if (hasAny(climate)) {
-            return 'It sounds like a <strong>climate or sustainability risk</strong> question. Our Sustainability &amp; Climate Risk practice covers climate risk assessment, scenario and risk analysis, and sustainability, ESG &amp; resilience. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Assess Your Climate Risk</a>. You can also try the Indicative Climate Risk Exposure Screening on the Climate page.';
+            return 'It sounds like a <strong>climate or sustainability risk</strong> question. Our Sustainability &amp; Climate Risk practice covers climate risk assessment, scenario and risk analysis, and sustainability, ESG &amp; resilience — starting with a <strong>Climate Risk Exposure Assessment</strong>. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Assess Your Climate Risk</a>.' + routes;
         }
         if (msg.indexOf('career') !== -1 || msg.indexOf('job') !== -1) {
-            return 'For careers, we work across three capability tracks: Specialty Claims &amp; Risk, Insurance Process &amp; Automation, and Climate &amp; Sustainability Risk. Specific vacancies are advertised when roles open — see the <a onclick="showPage(\'careers\'); toggleChat()">Careers</a> page.';
+            return 'For careers, we work across three capability tracks: Specialty Claims &amp; Risk, Insurance Process &amp; Automation, and Climate &amp; Sustainability Risk. Specific vacancies are advertised when roles open — see the <a onclick="showPage(\'careers\'); toggleChat()">Careers</a> page.' + routes;
         }
-        return 'Thanks — for anything else, the best next step is to <a onclick="showPage(\'contact\'); toggleChat()">Talk to Sancara</a>. Or tell me if you\u2019re dealing with a <strong>complex claim</strong>, an <strong>insurance process</strong> challenge, or a <strong>climate / sustainability risk</strong>.';
+        return 'I can point you to the right Sancara capability: a <strong>complex claim</strong>, an <strong>insurance process</strong> challenge, or a <strong>climate / sustainability risk</strong>. Or <a onclick="showPage(\'contact\'); toggleChat()">Talk to Sancara</a> directly.' + routes;
     }
 </script>
 </body>
