@@ -325,6 +325,146 @@
             .flow-step:not(:last-child)::after { display: none; }
             .footer-grid { grid-template-columns: 1fr; }
         }
+    
+    
+    /* SANCARA REDESIGN — locked brand direction */
+    :root {
+        --navy: #071A2B;
+        --navy-deep: #071A2B;
+        --navy-darker: #071A2B;
+        --gold: #D4AF37;
+        --gold-deep: #D4AF37;
+        --gold-light: #E5CC75;
+        --steel: #164A6E;
+        --steel-light: #376B89;
+        --metallic: #DCE5EC;
+        --metallic-light: #F2F5F7;
+        --metallic-dark: #AABAC7;
+        --white: #FFFFFF;
+        --light-grey: #F5F8FA;
+        --intelligence-blue: #2F6BFF;
+        --climate-teal: #1B998B;
+    }
+    body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--navy); }
+    h1, h2, h3, h4, h5, h6 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: -0.025em; }
+    .logo-word { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: .22em; }
+    .nav-container { max-width: 1440px; padding: .85rem clamp(1.1rem, 4vw, 3.5rem); }
+    .navbar { background: rgba(7,26,43,.88); border-bottom-color: rgba(212,175,55,.24); }
+    .navbar.scrolled { background: rgba(7,26,43,.97); border-bottom-color: rgba(212,175,55,.38); }
+    .nav-links { gap: clamp(1rem, 1.7vw, 2rem); }
+    .nav-links a { font-size: .9rem; }
+    .nav-cta, .btn-primary { background: var(--gold); color: var(--navy) !important; box-shadow: 0 8px 24px rgba(212,175,55,.2); }
+    .nav-cta:hover, .btn-primary:hover { background: #E1C45D; box-shadow: 0 12px 30px rgba(212,175,55,.28); }
+    .btn { border-radius: 3px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; transition: transform .25s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease; }
+    .btn-secondary { border: 1px solid rgba(255,255,255,.62); color: #fff; }
+    .btn-secondary:hover { border-color: var(--gold); background: rgba(255,255,255,.08); }
+    .hero.hero-photo {
+        min-height: min(900px, 100svh);
+        min-height: max(680px, min(900px, 100svh));
+        justify-content: flex-start;
+        align-items: center;
+        background-color: var(--navy);
+        background-image:
+            linear-gradient(90deg, rgba(7,26,43,.94) 0%, rgba(7,26,43,.82) 38%, rgba(7,26,43,.45) 72%, rgba(7,26,43,.24) 100%),
+            linear-gradient(0deg, rgba(7,26,43,.58) 0%, transparent 46%, rgba(7,26,43,.22) 100%),
+            url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85");
+        background-position: center, center, center 54%;
+        background-size: cover;
+        isolation: isolate;
+    }
+    .hero.hero-photo::before {
+        content: "";
+        position: absolute; inset: 0; z-index: 0; pointer-events: none;
+        background:
+            radial-gradient(ellipse at 78% 28%, rgba(212,175,55,.13), transparent 38%),
+            linear-gradient(135deg, transparent 48%, rgba(47,107,255,.07) 100%);
+    }
+    .hero-topography {
+        position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .32;
+        background-image: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 38px, rgba(212,175,55,.24) 39px, transparent 40px 58px);
+        mask-image: linear-gradient(90deg, transparent 20%, #000 72%, #000 100%);
+        -webkit-mask-image: linear-gradient(90deg, transparent 20%, #000 72%, #000 100%);
+    }
+    .hero-content {
+        width: min(100%, 1240px); max-width: 1240px; margin: 0 auto; padding: 10rem clamp(1.4rem, 7vw, 7rem) 7rem;
+        text-align: left; z-index: 2;
+    }
+    .hero-tagline {
+        display: inline-flex; align-items: center; gap: .8rem;
+        color: var(--gold); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: .78rem; letter-spacing: .22em; line-height: 1.6; margin-bottom: 1.7rem;
+        text-shadow: none;
+    }
+    .hero-tagline::before { content: ""; width: 34px; height: 1px; background: var(--gold); display: inline-block; }
+    .hero h1 {
+        max-width: 900px; font-size: clamp(2.9rem, 6.1vw, 5.7rem); line-height: 1.02; letter-spacing: -.055em;
+        font-weight: 500; margin-bottom: 1.65rem; text-wrap: balance;
+    }
+    .hero h1 span { color: #fff; }
+    .hero-subtitle {
+        max-width: 690px; margin: 0 0 2.2rem; color: rgba(255,255,255,.82);
+        font-size: clamp(1.03rem, 1.5vw, 1.2rem); line-height: 1.8;
+    }
+    .hero-buttons { justify-content: flex-start; gap: .85rem; }
+    .hero-buttons .btn { min-height: 54px; padding: .95rem 1.5rem; }
+    .hero-proofline { margin-top: 2.6rem; display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; color: rgba(255,255,255,.74); font-size: .79rem; letter-spacing: .035em; }
+    .hero-proofline span { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 5px rgba(212,175,55,.13); margin-right: .25rem; }
+    .hero-proofline b { color: var(--gold); font-weight: 400; }
+    .hero-scroll-cue { position: absolute; right: clamp(1.4rem, 4vw, 4rem); bottom: 2.3rem; z-index: 3; display: flex; align-items: center; gap: .75rem; color: rgba(255,255,255,.68); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; }
+    .hero-scroll-cue span { display: inline-block; width: 34px; height: 1px; background: var(--gold); }
+    .section { padding: clamp(4rem, 8vw, 7rem) clamp(1.2rem, 4vw, 3rem); }
+    .section-header { margin-bottom: 3.25rem; }
+    .section-header h2 { font-size: clamp(2rem, 4vw, 3.15rem); font-weight: 500; letter-spacing: -.04em; }
+    .section-header p { line-height: 1.8; }
+    .gold-line { height: 2px; width: 48px; background: var(--gold); border-radius: 0; }
+    .eyebrow { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: var(--steel); font-size: .72rem; letter-spacing: .18em; }
+    .card-grid { gap: 1.25rem; }
+    .card { border-radius: 3px; padding: clamp(1.6rem, 3vw, 2.5rem); border-color: rgba(7,26,43,.12); box-shadow: 0 6px 30px rgba(7,26,43,.035); }
+    .card::before { background: var(--gold); height: 2px; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 18px 48px rgba(7,26,43,.09); border-color: rgba(212,175,55,.5); }
+    .card-icon { border-radius: 3px; background: var(--navy); box-shadow: none; }
+    .practice-num { color: var(--gold); }
+    .bg-alt { background: #F5F8FA; }
+    .page-section { animation-duration: .35s; }
+    .footer { background: var(--navy); }
+    .footer-bottom { border-top-color: rgba(212,175,55,.22); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+        outline: 2px solid var(--intelligence-blue); outline-offset: 3px;
+    }
+    @media (max-width: 900px) {
+        .hero.hero-photo { min-height: max(680px, 88svh); background-position: center, center, 58% center; }
+        .hero-content { padding-top: 9rem; padding-bottom: 6.5rem; }
+        .hero h1 { font-size: clamp(2.7rem, 8vw, 4.4rem); }
+        .hero-scroll-cue { display: none; }
+        .nav-links { gap: 1.15rem; }
+    }
+    @media (max-width: 700px) {
+        .hero.hero-photo {
+            min-height: 760px; min-height: max(760px, 92svh);
+            background-image:
+                linear-gradient(90deg, rgba(7,26,43,.91), rgba(7,26,43,.68)),
+                linear-gradient(0deg, rgba(7,26,43,.5), transparent 70%),
+                url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80");
+            background-position: center, center, 58% center;
+        }
+        .hero-content { padding: 8.5rem 1.35rem 5.5rem; }
+        .hero h1 { font-size: clamp(2.55rem, 12vw, 3.65rem); line-height: 1.04; }
+        .hero-tagline { font-size: .68rem; letter-spacing: .14em; }
+        .hero-subtitle { font-size: 1rem; line-height: 1.7; }
+        .hero-buttons { align-items: stretch; flex-direction: column; max-width: 340px; }
+        .hero-buttons .btn { justify-content: center; width: 100%; }
+        .hero-proofline { max-width: 310px; line-height: 1.9; gap: .4rem; margin-top: 1.9rem; }
+        .nav-container { padding: .7rem 1.1rem; }
+        .logo-mark { width: 35px; height: 35px; }
+        .logo-word { font-size: 1.12rem; }
+        .section { padding: 4.25rem 1.2rem; }
+        .card-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+
     </style>
 <base target="_blank">
 </head>
@@ -361,19 +501,20 @@
 <!-- ══════════════════ HOME ══════════════════ -->
 <div id="home" class="page-section active">
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-bg-animation" id="heroBg"></div>
+    <!-- Hero: full-width photographic treatment; existing site functionality retained -->
+    <section class="hero hero-photo">
+        <div class="hero-topography" aria-hidden="true"></div>
         <div class="hero-content">
-            <img src="sancara-icon.png" alt="Sancara emblem" class="hero-emblem hero-emblem-img">
             <div class="hero-tagline">Specialty &amp; Emerging Risk Solutions</div>
-            <h1>Understand what is changing.<br>Respond with confidence.</h1>
+            <h1>Understand what is changing.<br><span>Respond with confidence.</span></h1>
             <p class="hero-subtitle">Sancara helps organisations understand, anticipate and respond to complex and emerging risks — from complex losses and disruption to changing climate exposure and risk-process transformation.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="showPage('contact')"><i class="fas fa-file-invoice-dollar"></i> Discuss a Complex Claim</button>
+                <button class="btn btn-primary" onclick="showPage('contact')"><i class="fas fa-arrow-right"></i> Discuss a Complex Risk</button>
                 <button class="btn btn-secondary" onclick="showPage('claims')"><i class="fas fa-th-large"></i> Explore Our Capabilities</button>
             </div>
+            <div class="hero-proofline"><span></span> Claims expertise <b>·</b> Process intelligence <b>·</b> Climate resilience</div>
         </div>
+        <div class="hero-scroll-cue" aria-hidden="true"><span></span> Explore Sancara</div>
     </section>
 
     <!-- Three Practices -->
