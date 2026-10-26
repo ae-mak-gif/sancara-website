@@ -52,13 +52,11 @@
             {"@type": "Question", "name": "What is a complex or specialty claim?", "acceptedAnswer": {"@type": "Answer", "text": "A claim involving multiple causes, technical uncertainty, significant business interruption, difficult quantification or emerging loss drivers — where a standard claims process alone cannot produce a defensible answer. Sancara brings the technical picture together: investigation, causation, assessment and quantum."}},
             {"@type": "Question", "name": "When should an insurer, broker or risk owner bring Sancara in?", "acceptedAnswer": {"@type": "Answer", "text": "Early — ideally at notification or first reserve-setting for large or unusual losses. Early technical involvement protects the evidence, frames the right questions and reduces the risk of positions hardening on incomplete information."}},
             {"@type": "Question", "name": "What does the claims process involve?", "acceptedAnswer": {"@type": "Answer", "text": "Four stages: Understand (what happened?), Assess (what was affected?), Quantify (what is the impact?) and Inform (what does the evidence support?). Each stage is documented so decisions can be defended."}},
-            {"@type": "Question", "name": "Does the Business Interruption Calculator replace a loss assessment?", "acceptedAnswer": {"@type": "Answer", "text": "No. The calculator is an indicative planning and educational tool only — not a formal claims valuation or loss-adjustment assessment. Actual BI losses depend on policy terms, trends, mitigation, increased cost of working and many other factors."}},
             {"@type": "Question", "name": "What is insurance process intelligence?", "acceptedAnswer": {"@type": "Answer", "text": "The disciplined mapping and analysis of how insurance work actually flows — people, documents, systems, decisions — so that improvement and automation are grounded in reality rather than assumption."}},
             {"@type": "Question", "name": "Which processes are good automation candidates?", "acceptedAnswer": {"@type": "Answer", "text": "Repetitive, rules-based, high-volume activities: document intake, data extraction, claims triage, workflow routing, status updates, report preparation, information requests and repetitive administration. Judgement-heavy work is supported, not replaced."}},
             {"@type": "Question", "name": "Does Sancara sell AI products?", "acceptedAnswer": {"@type": "Answer", "text": "Sancara is not a generic AI vendor. We combine insurance and risk expertise, process understanding and technology. Capabilities such as claims document intelligence, triage support and AI-assisted report preparation are areas of active development — described as emerging capabilities, not mature commercial products."}},
             {"@type": "Question", "name": "How do you avoid overpromising on AI?", "acceptedAnswer": {"@type": "Answer", "text": "Our methodology — Map, Identify, Transform, Automate, Verify — tests each automation or AI application against real workflow data and measured outcomes before scaling. If the evidence does not support it, we say so."}},
             {"@type": "Question", "name": "What is a climate risk assessment?", "acceptedAnswer": {"@type": "Answer", "text": "A structured examination of how climate-related hazards could affect your assets, operations and organisation: hazard identification, exposure and vulnerability considerations, impact analysis and risk prioritisation — followed by adaptation and resilience options."}},
-            {"@type": "Question", "name": "Is the screening tool on this page a climate model?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Indicative Climate Risk Exposure Screening is a qualitative screening aid only — not a site-specific climate model, engineering assessment or catastrophe-risk assessment. It generates no risk scores; a meaningful assessment requires asset-level information and appropriate data."}},
             {"@type": "Question", "name": "What does climate scenario and risk analysis add?", "acceptedAnswer": {"@type": "Answer", "text": "Scenarios explore how changing conditions — different climate pathways and time horizons — could alter future exposure, so decisions made today remain defensible under a range of plausible futures rather than a single forecast."}},
             {"@type": "Question", "name": "How does this relate to ESG and sustainability reporting?", "acceptedAnswer": {"@type": "Answer", "text": "Climate and sustainability risk analysis produces the information organisations need for ESG reporting, sustainability strategy and resilience planning — turning disclosure obligations into better internal decisions."}}
         ]
@@ -646,30 +644,6 @@
         </div>
     </section>
 
-    <!-- Tools preview -->
-    <section class="section">
-        <div class="section-header animate-on-scroll">
-            <div class="eyebrow">Tools</div>
-            <h2>Try a risk tool.</h2>
-            <div class="gold-line"></div>
-            <p>Indicative, educational tools to help you frame a risk question before you talk to us.</p>
-        </div>
-        <div class="card-grid" style="max-width: 900px; margin: 0 auto;">
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-calculator"></i></div>
-                <h3>Business Interruption Calculator</h3>
-                <p>An indicative estimate of business interruption exposure based on your revenue, margin and downtime assumptions.</p>
-                <a class="card-cta" onclick="showPage('claims'); setTimeout(() => document.getElementById('bi-tool').scrollIntoView({behavior: 'smooth'}), 150)">Try a Risk Tool <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div>
-                <h3>Climate Risk Exposure Screening</h3>
-                <p>Flag the climate hazards relevant to your assets and understand what a detailed assessment would examine.</p>
-                <a class="card-cta" onclick="showPage('climate'); setTimeout(() => document.getElementById('climate-tool').scrollIntoView({behavior: 'smooth'}), 150)">Try a Risk Tool <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact CTA -->
     <section class="dark-band">
         <div class="dark-band-inner animate-on-scroll">
@@ -793,7 +767,6 @@
             <details class="faq-item animate-on-scroll"><summary>What is a complex or specialty claim?</summary><p>A claim involving multiple causes, technical uncertainty, significant business interruption, difficult quantification or emerging loss drivers — where a standard claims process alone cannot produce a defensible answer. Sancara brings the technical picture together: investigation, causation, assessment and quantum.</p></details>
             <details class="faq-item animate-on-scroll"><summary>When should an insurer, broker or risk owner bring Sancara in?</summary><p>Early — ideally at notification or first reserve-setting for large or unusual losses. Early technical involvement protects the evidence, frames the right questions and reduces the risk of positions hardening on incomplete information.</p></details>
             <details class="faq-item animate-on-scroll"><summary>What does the claims process involve?</summary><p>Four stages: Understand (what happened?), Assess (what was affected?), Quantify (what is the impact?) and Inform (what does the evidence support?). Each stage is documented so decisions can be defended.</p></details>
-            <details class="faq-item animate-on-scroll"><summary>Does the Business Interruption Calculator replace a loss assessment?</summary><p>No. The calculator is an indicative planning and educational tool only — not a formal claims valuation or loss-adjustment assessment. Actual BI losses depend on policy terms, trends, mitigation, increased cost of working and many other factors.</p></details>
         </div>
     </section>
     <section class="dark-band">
@@ -805,37 +778,7 @@
         </div>
     </section>
 
-    <section class="bg-alt" id="bi-tool">
-        <div class="section">
-            <div class="tool-container animate-on-scroll">
-                <h3 style="text-align: center; margin-bottom: 0.5rem; color: var(--navy);"><i class="fas fa-calculator" style="color: var(--gold-deep);"></i> Business Interruption Calculator</h3>
-                <p style="text-align: center; color: var(--steel); margin-bottom: 1.5rem; font-size: 0.92rem;">An indicative estimate of business interruption exposure to help frame the conversation.</p>
-                <div class="disclaimer"><i class="fas fa-circle-info"></i><span><strong>Indicative only.</strong> This is an educational, lead-generation tool — not a formal claims valuation or loss-adjustment assessment. Actual BI losses depend on policy terms, trends, mitigation and many other factors.</span></div>
-                <div class="form-row">
-                    <div class="form-group"><label for="biRevenue">Annual Revenue (USD)</label><input type="number" id="biRevenue" min="0" placeholder="e.g. 5000000"></div>
-                    <div class="form-group"><label for="biMargin">Gross Profit Margin (%)</label><input type="number" id="biMargin" min="0" max="100" placeholder="e.g. 35"></div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group"><label for="biPeriod">Indemnity Period (months)</label><input type="number" id="biPeriod" min="1" max="36" placeholder="e.g. 12"></div>
-                    <div class="form-group"><label for="biDowntime">Estimated Downtime (months)</label><input type="number" id="biDowntime" min="0" max="36" placeholder="e.g. 3"></div>
-                </div>
-                <div class="form-group"><label for="biStanding">Standing Charges (% of revenue)</label><input type="number" id="biStanding" min="0" max="100" placeholder="e.g. 20"></div>
-                <button class="btn btn-primary" onclick="calculateBI()" style="width: 100%; justify-content: center;"><i class="fas fa-calculator"></i> Estimate Exposure</button>
-                <div id="biResult" class="result-box" style="display: none;">
-                    <h4>Estimated Business Interruption Exposure</h4>
-                    <div class="result-value" id="biValue">$0</div>
-                    <div style="margin-top: 1.25rem; background: rgba(255,255,255,0.08); padding: 1.25rem; border-radius: 8px; text-align: left; font-size: 0.88rem; line-height: 1.9;">
-                        <div style="display: flex; justify-content: space-between; gap: 1rem;"><span>Gross profit per month</span><strong id="biGPMonth">—</strong></div>
-                        <div style="display: flex; justify-content: space-between; gap: 1rem;"><span>Standing charges per month</span><strong id="biSCMonth">—</strong></div>
-                        <div style="display: flex; justify-content: space-between; gap: 1rem;"><span>Effective downtime used</span><strong id="biEffMonths">—</strong></div>
-                        <div style="display: flex; justify-content: space-between; gap: 1rem;"><span>Within indemnity period?</span><strong id="biWithin">—</strong></div>
-                    </div>
-                    <p style="margin-top: 1rem; opacity: 0.85; font-size: 0.82rem;">Indicative only — not a formal claims valuation or loss-adjustment assessment.</p>
-                    <button class="btn btn-primary btn-sm" style="margin-top: 1rem;" onclick="showPage('contact')"><i class="fas fa-comments"></i> Discuss a Complex Claim</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </div>
 
 <!-- ══════════════════ PRACTICE 2: INSURANCE PROCESS ══════════════════ -->
@@ -980,7 +923,7 @@
         </div>
     </section>
 
-    <!-- Climate Risk Exposure Screening -->
+    <!-- Climate Risk Assessment FAQ -->
     <section class="section" id="faq-climate">
         <div class="section-header animate-on-scroll">
             <div class="eyebrow">Common Questions</div>
@@ -989,7 +932,6 @@
         </div>
         <div style="max-width: 850px; margin: 0 auto;">
             <details class="faq-item animate-on-scroll"><summary>What is a climate risk assessment?</summary><p>A structured examination of how climate-related hazards could affect your assets, operations and organisation: hazard identification, exposure and vulnerability considerations, impact analysis and risk prioritisation — followed by adaptation and resilience options.</p></details>
-            <details class="faq-item animate-on-scroll"><summary>Is the screening tool on this page a climate model?</summary><p>No. The Indicative Climate Risk Exposure Screening is a qualitative screening aid only — not a site-specific climate model, engineering assessment or catastrophe-risk assessment. It generates no risk scores; a meaningful assessment requires asset-level information and appropriate data.</p></details>
             <details class="faq-item animate-on-scroll"><summary>What does climate scenario and risk analysis add?</summary><p>Scenarios explore how changing conditions — different climate pathways and time horizons — could alter future exposure, so decisions made today remain defensible under a range of plausible futures rather than a single forecast.</p></details>
             <details class="faq-item animate-on-scroll"><summary>How does this relate to ESG and sustainability reporting?</summary><p>Climate and sustainability risk analysis produces the information organisations need for ESG reporting, sustainability strategy and resilience planning — turning disclosure obligations into better internal decisions.</p></details>
         </div>
@@ -1003,37 +945,7 @@
         </div>
     </section>
 
-    <section class="bg-alt" id="climate-tool">
-        <div class="section">
-            <div class="tool-container animate-on-scroll">
-                <h3 style="text-align: center; margin-bottom: 0.5rem; color: var(--navy);"><i class="fas fa-cloud-sun-rain" style="color: var(--gold-deep);"></i> Indicative Climate Risk Exposure Screening</h3>
-                <p style="text-align: center; color: var(--steel); margin-bottom: 1.5rem; font-size: 0.92rem;">Flag the hazards relevant to your asset or operation and see what a detailed assessment would examine.</p>
-                <div class="disclaimer"><i class="fas fa-circle-info"></i><span><strong>Indicative screening only.</strong> Not a site-specific climate model, engineering assessment or catastrophe-risk assessment. No scores are generated — a meaningful assessment requires asset-level information and appropriate data.</span></div>
-                <div class="form-row">
-                    <div class="form-group"><label for="scrRegion">Region</label><select id="scrRegion"><option>Southern Africa — inland</option><option>Southern Africa — coastal</option><option>East Africa</option><option>West Africa</option><option>Other</option></select></div>
-                    <div class="form-group"><label for="scrAsset">Asset / Operation Type</label><select id="scrAsset"><option>Agriculture</option><option>Infrastructure</option><option>Real Estate / Buildings</option><option>Energy</option><option>Mining</option><option>Supply Chain / Logistics</option></select></div>
-                </div>
-                <div class="form-group"><label>Which hazards are relevant to you? (select all that apply)</label>
-                    <div class="checkbox-grid">
-                        <label class="checkbox-item"><input type="checkbox" class="scr-hazard" value="Riverine & flash flooding"> Riverine &amp; flash flooding</label>
-                        <label class="checkbox-item"><input type="checkbox" class="scr-hazard" value="Drought & water stress"> Drought &amp; water stress</label>
-                        <label class="checkbox-item"><input type="checkbox" class="scr-hazard" value="Extreme heat"> Extreme heat</label>
-                        <label class="checkbox-item"><input type="checkbox" class="scr-hazard" value="Wildfire"> Wildfire</label>
-                        <label class="checkbox-item"><input type="checkbox" class="scr-hazard" value="Cyclone / severe storm"> Cyclone / severe storm</label>
-                        <label class="checkbox-item"><input type="checkbox" class="scr-hazard" value="Sea-level rise / coastal"> Sea-level rise / coastal</label>
-                    </div>
-                </div>
-                <button class="btn btn-primary" onclick="runClimateScreening()" style="width: 100%; justify-content: center;"><i class="fas fa-filter"></i> Run Indicative Screening</button>
-                <div id="climateResult" class="result-box" style="display: none;">
-                    <h4>Indicative Screening Summary</h4>
-                    <div id="climateFlags" style="margin: 1rem 0;"></div>
-                    <p id="climateSummaryText" style="text-align: left; font-size: 0.9rem; line-height: 1.7; opacity: 0.95;"></p>
-                    <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.8rem;">Indicative screening only — not a site-specific climate model, engineering assessment or catastrophe-risk assessment.</p>
-                    <button class="btn btn-primary btn-sm" style="margin-top: 1rem;" onclick="showPage('contact')"><i class="fas fa-cloud-sun-rain"></i> Assess Your Climate Risk</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 </div>
 
 <!-- ══════════════════ WHO WE SERVE ══════════════════ -->
@@ -1384,72 +1296,6 @@
         });
     }, { threshold: 0.12 });
     document.querySelectorAll('.animate-on-scroll').forEach(function (el) { observer.observe(el); });
-
-    /* ── Business Interruption Calculator ───────────────── */
-    function formatUSD(n) {
-        if (n >= 1e9) return '$' + (n / 1e9).toFixed(2) + 'B';
-        if (n >= 1e6) return '$' + (n / 1e6).toFixed(2) + 'M';
-        return '$' + Math.round(n).toLocaleString('en-US');
-    }
-
-    function calculateBI() {
-        var revenue = parseFloat(document.getElementById('biRevenue').value);
-        var margin = parseFloat(document.getElementById('biMargin').value);
-        var period = parseFloat(document.getElementById('biPeriod').value);
-        var downtime = parseFloat(document.getElementById('biDowntime').value);
-        var standing = parseFloat(document.getElementById('biStanding').value);
-
-        var box = document.getElementById('biResult');
-        if (isNaN(revenue) || isNaN(margin) || isNaN(period) || isNaN(downtime) || isNaN(standing) || revenue <= 0 || period <= 0) {
-            box.style.display = 'block';
-            box.querySelector('h4').textContent = 'Please complete all fields';
-            document.getElementById('biValue').textContent = '—';
-            document.getElementById('biGPMonth').textContent = '—';
-            document.getElementById('biSCMonth').textContent = '—';
-            document.getElementById('biEffMonths').textContent = '—';
-            document.getElementById('biWithin').textContent = '—';
-            return;
-        }
-        margin = Math.min(Math.max(margin, 0), 100);
-        standing = Math.min(Math.max(standing, 0), 100);
-
-        var gpMonth = (revenue * margin / 100) / 12;
-        var scMonth = (revenue * standing / 100) / 12;
-        var effMonths = Math.min(Math.max(downtime, 0), period);
-        var exposure = (gpMonth + scMonth) * effMonths;
-
-        box.style.display = 'block';
-        box.querySelector('h4').textContent = 'Estimated Business Interruption Exposure';
-        document.getElementById('biValue').textContent = formatUSD(exposure);
-        document.getElementById('biGPMonth').textContent = formatUSD(gpMonth);
-        document.getElementById('biSCMonth').textContent = formatUSD(scMonth);
-        document.getElementById('biEffMonths').textContent = effMonths + ' months';
-        document.getElementById('biWithin').textContent = (downtime <= period)
-            ? 'Yes'
-            : 'Capped — downtime exceeds indemnity period';
-        box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-
-    /* ── Climate Risk Exposure Screening ────────────────── */
-    function runClimateScreening() {
-        var region = document.getElementById('scrRegion').value;
-        var asset = document.getElementById('scrAsset').value;
-        var hazards = Array.prototype.slice.call(document.querySelectorAll('.scr-hazard:checked')).map(function (c) { return c.value; });
-
-        var box = document.getElementById('climateResult');
-        var flags = document.getElementById('climateFlags');
-        var text = document.getElementById('climateSummaryText');
-        box.style.display = 'block';
-
-        if (hazards.length === 0) {
-            flags.innerHTML = '';
-            text.innerHTML = 'You have not flagged any hazards for a <strong>' + asset.toLowerCase() + '</strong> asset/operation in <strong>' + region + '</strong>. That in itself is a screening outcome — most assets carry at least one relevant hazard. Consider which of the listed hazards could plausibly reach your asset, then run the screening again — or contact us for a structured hazard identification workshop.';
-        } else {
-            flags.innerHTML = hazards.map(function (h) { return '<span class="screening-flag">' + h + '</span>'; }).join('');
-            text.innerHTML = 'For a <strong>' + asset.toLowerCase() + '</strong> asset/operation in <strong>' + region + '</strong>, you flagged <strong>' + hazards.length + '</strong> relevant hazard(s). A detailed Sancara assessment would examine, for each: the hazard\u2019s physical characteristics at your location, your asset\u2019s vulnerability and sensitivity, potential operational and financial consequences under relevant scenarios, and adaptation and resilience options. <strong>No risk scores are generated at this stage</strong> — that requires asset-level information and appropriate climate, engineering and exposure data. The next step is a scoping conversation.';
-        }
-        box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
 
     /* ── Insights filter ────────────────────────────────── */
     function filterInsights(category, btn) {
