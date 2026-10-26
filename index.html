@@ -481,7 +481,7 @@
                 <a data-nav="whatwedo">What We Do <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a onclick="showPage('claims')">Specialty Risk Advisory<span class="dropdown-desc">Complex, emerging and multidisciplinary risks</span></a></li>
-                    <li><a onclick="showPage('claims')">Claims Management &amp; Loss Adjusting<span class="dropdown-desc">Investigate, assess and quantify losses</span></a></li>
+                    <li><a onclick="showPage('claims-management')">Claims Management &amp; Loss Adjusting<span class="dropdown-desc">Investigate, assess and quantify losses</span></a></li>
                     <li><a onclick="showPage('insurance-process')">InsurTech – Insurance Process Intelligence &amp; Automation<span class="dropdown-desc">Improve insurance workflows</span></a></li>
                 </ul>
             </li>
@@ -546,7 +546,7 @@
                 <h3>Claims Management &amp; Loss Adjusting</h3>
                 <div class="practice-tagline">Establish what the evidence supports.</div>
                 <p>Technical investigation, causation analysis, damage assessment and loss quantification — including complex engineering losses, multidisciplinary claims and business interruption.</p>
-                <a class="card-cta" onclick="showPage('claims')">Explore Claims Management <i class="fas fa-arrow-right"></i></a>
+                <a class="card-cta" onclick="showPage('claims-management')">Explore Claims Management <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -735,17 +735,7 @@
             <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-diagram-project"></i></div><h3>Emerging &amp; Multidisciplinary Risk</h3><p>Interconnected risk events that cross technical disciplines, asset classes or operational boundaries and require an integrated view of cause, exposure and impact.</p></div>
             <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-chart-line"></i></div><h3>Climate Scenario &amp; Financial Exposure Analysis</h3><p>Assess how plausible future conditions may affect assets, operations, business continuity and financial exposure to support risk prioritisation and resilience decisions.</p></div>
         </div>
-        <div class="section-header animate-on-scroll" style="margin-top: 5rem;">
-            <div class="eyebrow">Claims Management &amp; Loss Adjusting</div>
-            <h2>Establish what happened, what was affected and what the evidence supports.</h2>
-            <div class="gold-line"></div>
-            <p>Claims support spans technical investigation, cause-of-loss analysis, damage assessment, business interruption, financial loss quantification and clear reporting for complex or multidisciplinary claims.</p>
-        </div>
-        <div class="card-grid">
-            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-magnifying-glass-chart"></i></div><h3>Claims Investigation &amp; Causation</h3><p>Structured fact-finding and technical analysis to understand events, contributing factors and evidence relevant to the claim.</p></div>
-            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-building-circle-check"></i></div><h3>Damage &amp; Business Interruption Assessment</h3><p>Assessment of physical damage, operational disruption and the business interruption implications of a loss.</p></div>
-            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-calculator"></i></div><h3>Loss Quantification &amp; Reporting</h3><p>Evidence-led assessment of financial impact, documented assumptions and decision-useful reports for claims stakeholders.</p></div>
-        </div>
+
         <div class="section-header animate-on-scroll" style="margin-top: 5rem;">
             <div class="eyebrow">Our Process</div>
             <h2>Understand. Assess. Quantify. Inform.</h2>
@@ -778,21 +768,52 @@
             <div class="gold-line"></div>
         </div>
         <div style="max-width: 850px; margin: 0 auto;">
-            <details class="faq-item animate-on-scroll"><summary>What is a complex or specialty claim?</summary><p>A claim involving multiple causes, technical uncertainty, significant business interruption, difficult quantification or emerging loss drivers — where a standard claims process alone cannot produce a defensible answer. Sancara brings the technical picture together: investigation, causation, assessment and quantum.</p></details>
-            <details class="faq-item animate-on-scroll"><summary>When should an insurer, broker or risk owner bring Sancara in?</summary><p>Early — ideally at notification or first reserve-setting for large or unusual losses. Early technical involvement protects the evidence, frames the right questions and reduces the risk of positions hardening on incomplete information.</p></details>
-            <details class="faq-item animate-on-scroll"><summary>What does the claims process involve?</summary><p>Four stages: Understand (what happened?), Assess (what was affected?), Quantify (what is the impact?) and Inform (what does the evidence support?). Each stage is documented so decisions can be defended.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>Which risks fall within Specialty Risk Advisory?</summary><p>Depending on the engagement, this can include cyber security, climate-related and environmental risks, agricultural exposure, complex engineering, infrastructure, emerging risks and multidisciplinary risk environments.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>How does Sancara approach climate-related risk?</summary><p>We help organisations consider relevant hazards, exposure, vulnerability, possible operational and financial impacts, scenario analysis and resilience options. The scope is tailored to the assets, operations and decisions involved.</p></details>
+            <details class="faq-item animate-on-scroll"><summary>Can Sancara help when a specialty risk has already resulted in a loss?</summary><p>Yes. Claims investigation, causation analysis, damage assessment and loss quantification are covered under our separate Claims Management &amp; Loss Adjusting capability.</p></details>
         </div>
     </section>
     <section class="dark-band">
         <div class="dark-band-inner animate-on-scroll">
             <div class="eyebrow">Diagnostic Pathway</div>
-            <h2>Complex Claims Review</h2>
-            <p style="margin-bottom: 2rem;">For organisations dealing with a technically complex or difficult loss. A structured diagnostic to establish what happened, what was affected and what the evidence supports — before positions harden and costs escalate.</p>
-            <button class="btn btn-primary" onclick="selectEnquiryType('Specialty Risk Advisory / Claims Management & Loss Adjusting')"><i class="fas fa-file-invoice-dollar"></i> Start a Complex Claims Review</button>
+            <h2>Discuss a Specialty Risk</h2>
+            <p style="margin-bottom: 2rem;">For organisations facing complex, emerging or interconnected risks and seeking an evidence-led view of exposure, impact and response options.</p>
+            <button class="btn btn-primary" onclick="selectEnquiryType('Specialty Risk Advisory')"><i class="fas fa-compass"></i> Discuss a Specialty Risk</button>
         </div>
     </section>
 
     
+</div>
+
+<!-- ══════════════════ PILLAR 2: CLAIMS MANAGEMENT ══════════════════ -->
+<div id="claims-management" class="page-section">
+    <div class="division-hero">
+        <div class="hero-tagline">Claims Management &amp; Loss Adjusting</div>
+        <h1>Establish the facts. Quantify the loss.</h1>
+        <p>Evidence-led claims investigation, loss adjusting and financial impact assessment for complex, technical and multidisciplinary losses.</p>
+        <div class="hero-buttons"><button class="btn btn-primary" onclick="showPage('contact')"><i class="fas fa-file-invoice-dollar"></i> Discuss a Complex Claim</button></div>
+    </div>
+    <section class="section">
+        <div class="section-header animate-on-scroll"><div class="eyebrow">Claims Management &amp; Loss Adjusting</div><h2>When a loss is complex, decisions need a clear technical picture.</h2><div class="gold-line"></div><p>Claims can involve multiple causes, technical uncertainty, engineering damage, operational disruption, business interruption or difficult financial quantification. Sancara helps bring the evidence together so stakeholders can make better-informed decisions.</p></div>
+        <div class="card-grid">
+            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-magnifying-glass-chart"></i></div><h3>Claims Investigation &amp; Causation</h3><p>Structured fact-finding and technical analysis to understand events, contributing factors and evidence relevant to the claim.</p></div>
+            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-building-circle-check"></i></div><h3>Damage &amp; Engineering Loss Assessment</h3><p>Assessment of physical damage, affected assets and technical issues in complex engineering, commercial and infrastructure losses.</p></div>
+            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-chart-line"></i></div><h3>Business Interruption Claims</h3><p>Assessment of operational disruption, interruption periods, financial effects and the evidence needed to substantiate claimed losses.</p></div>
+            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-calculator"></i></div><h3>Loss Quantification &amp; Reporting</h3><p>Evidence-led assessment of financial impact, documented assumptions and decision-useful reports for claims stakeholders.</p></div>
+            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-diagram-project"></i></div><h3>Multidisciplinary &amp; Complex Claims</h3><p>Coordinated analysis where claims cross technical disciplines, causes, assets or operational boundaries.</p></div>
+            <div class="card animate-on-scroll"><div class="card-icon"><i class="fas fa-file-circle-check"></i></div><h3>Claims Documentation &amp; Decision Support</h3><p>Clear, structured reporting to help insurers, brokers and risk owners understand findings, uncertainties and next steps.</p></div>
+        </div>
+        <div class="section-header animate-on-scroll" style="margin-top:5rem;"><div class="eyebrow">Our Process</div><h2>Understand. Assess. Quantify. Inform.</h2><div class="gold-line"></div></div>
+        <div class="flow-container animate-on-scroll"><div class="flow-step"><div class="flow-icon"><i class="fas fa-magnifying-glass"></i></div><h4>Understand</h4><p>What happened?</p></div><div class="flow-step"><div class="flow-icon"><i class="fas fa-list-check"></i></div><h4>Assess</h4><p>What was affected?</p></div><div class="flow-step"><div class="flow-icon"><i class="fas fa-calculator"></i></div><h4>Quantify</h4><p>What is the impact?</p></div><div class="flow-step"><div class="flow-icon"><i class="fas fa-file-lines"></i></div><h4>Inform</h4><p>What does the evidence support?</p></div></div>
+        <div class="section-header animate-on-scroll" style="margin-top:5rem;"><div class="eyebrow">Who We Support</div><h2>Claims stakeholders</h2><div class="gold-line"></div></div>
+        <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));"><div class="service-item animate-on-scroll">Insurers &amp; Reinsurers</div><div class="service-item animate-on-scroll">Brokers &amp; Risk Intermediaries</div><div class="service-item animate-on-scroll">Corporate Risk Owners</div><div class="service-item animate-on-scroll">Asset &amp; Infrastructure Owners</div></div>
+    </section>
+    <section class="section" id="faq-claims-management"><div class="section-header animate-on-scroll"><div class="eyebrow">Common Questions</div><h2>Claims Management &amp; Loss Adjusting — FAQs</h2><div class="gold-line"></div></div><div style="max-width:850px;margin:0 auto;">
+        <details class="faq-item animate-on-scroll"><summary>What does claims management and loss adjusting involve?</summary><p>It can include investigation, cause-of-loss analysis, damage assessment, review of operational impacts, business interruption assessment, loss quantification and structured reporting, depending on the agreed scope.</p></details>
+        <details class="faq-item animate-on-scroll"><summary>When should Sancara be involved in a complex claim?</summary><p>Early involvement can help preserve evidence, identify the right technical questions and support clear documentation while facts and loss estimates are still being established.</p></details>
+        <details class="faq-item animate-on-scroll"><summary>Can you assess business interruption losses?</summary><p>Business interruption analysis can examine operational disruption, interruption periods, relevant financial information and the basis for quantifying the claimed impact.</p></details>
+    </div></section>
+    <section class="dark-band"><div class="dark-band-inner animate-on-scroll"><div class="eyebrow">Start a Conversation</div><h2>Need clarity on a complex loss?</h2><p>Tell us what happened and what decisions need to be made. We can discuss the appropriate scope of claims support.</p><button class="btn btn-primary" onclick="selectEnquiryType('Claims Management &amp; Loss Adjusting')"><i class="fas fa-comments"></i> Discuss a Complex Claim</button></div></section>
 </div>
 
 <!-- ══════════════════ PRACTICE 2: INSURANCE PROCESS ══════════════════ -->
@@ -814,7 +835,7 @@
         </div>
         <div class="section-header animate-on-scroll" style="margin-top: 4rem;">
             <div class="eyebrow">What We Do</div>
-            <h2>Three services.</h2>
+            <h2>Specialty risk advisory services.</h2>
             <div class="gold-line"></div>
         </div>
         <div class="card-grid">
@@ -1028,7 +1049,7 @@
         <div id="insightsGrid">
             <div class="article-card animate-on-scroll visible" data-category="claims">
                 <div class="article-image"><i class="fas fa-file-invoice-dollar"></i></div>
-                <div class="article-content"><span class="article-tag">Loss Brief</span><h3>Complex Losses: Why Multi-Cause Claims Need a Technical Picture</h3><p class="article-meta">A framework for separating proximate causes, overlapping triggers and the evidence needed to quantify each — Signal → Evidence → Analysis → Impact → Response.<br><a class="card-cta" onclick="showPage('claims')">Explore Claims Management &amp; Loss Adjusting <i class="fas fa-arrow-right"></i></a></p></div>
+                <div class="article-content"><span class="article-tag">Loss Brief</span><h3>Complex Losses: Why Multi-Cause Claims Need a Technical Picture</h3><p class="article-meta">A framework for separating proximate causes, overlapping triggers and the evidence needed to quantify each — Signal → Evidence → Analysis → Impact → Response.<br><a class="card-cta" onclick="showPage('claims-management')">Explore Claims Management &amp; Loss Adjusting <i class="fas fa-arrow-right"></i></a></p></div>
             </div>
             <div class="article-card animate-on-scroll visible" data-category="claims">
                 <div class="article-image"><i class="fas fa-bolt"></i></div>
@@ -1204,12 +1225,13 @@
         <div class="footer-brand">
             <h3>SANCARA</h3>
             <div class="footer-tagline">Specialty Risk Advisory · Claims Management &amp; Loss Adjusting · InsurTech</div>
-            <p>Helping organisations understand, anticipate and respond to complex and emerging risks.</p>
+            <p>Helping organisations understand complex risks, make defensible claims decisions and improve insurance operations.</p>
             <p style="margin-top: 1.25rem; line-height: 2;">
                 <a href="mailto:info@sancara.co.zw" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-envelope" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>info@sancara.co.zw</a><br>
                 <a href="mailto:intelligence@sancara.co.zw" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-brain" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>intelligence@sancara.co.zw</a><br>
                 <a href="https://www.sancara.co.zw" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-globe" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>www.sancara.co.zw</a><br>
-                <a href="https://wa.me/263787117461" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fab fa-whatsapp" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>+263 787 117 461</a>
+                <a href="https://wa.me/263787117461" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fab fa-whatsapp" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>+263 787 117 461</a><br>
+                <a href="https://www.linkedin.com/company/sancara/" target="_blank" rel="noopener noreferrer" aria-label="Sancara on LinkedIn" style="color: var(--metallic); text-decoration: none;"><i class="fab fa-linkedin" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>LinkedIn</a>
             </p>
             <p style="margin-top: 1rem;"><i class="fas fa-location-dot" style="color: var(--gold); margin-right: 0.4rem;"></i>Based in Southern Africa.</p>
         </div>
@@ -1217,7 +1239,7 @@
             <h4>What We Do</h4>
             <ul>
                 <li><a onclick="showPage('claims')">Specialty Risk Advisory</a></li>
-                <li><a onclick="showPage('claims')">Claims Management &amp; Loss Adjusting</a></li>
+                <li><a onclick="showPage('claims-management')">Claims Management &amp; Loss Adjusting</a></li>
                 <li><a onclick="showPage('insurance-process')">InsurTech – Insurance Process Intelligence &amp; Automation</a></li>
             </ul>
         </div>
