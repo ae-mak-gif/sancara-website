@@ -466,7 +466,53 @@
         *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
 
-    </style>
+    
+    /* NAVY BALANCE EXPERIMENT — reversible visual treatment only */
+    .division-hero {
+        background-image:
+          linear-gradient(90deg, rgba(255,255,255,.91) 0%, rgba(255,255,255,.84) 58%, rgba(255,255,255,.74) 100%),
+          linear-gradient(0deg, rgba(255,255,255,.18), rgba(255,255,255,.18)),
+          url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=85");
+        color: var(--navy);
+    }
+    .division-hero::before {
+        background: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 34px, rgba(212,175,55,.46) 35px, transparent 36px 52px);
+        opacity: .85;
+    }
+    .division-hero h1, .division-hero .hero-tagline { color: var(--navy); }
+    .division-hero p { color: var(--navy); opacity: .9; }
+    .division-hero .btn-secondary { color: var(--navy); border-color: rgba(7,26,43,.42); }
+    .division-hero .btn-secondary:hover { color: var(--navy); background: rgba(7,26,43,.06); }
+
+    .light-band-experiment {
+        background: var(--white);
+        color: var(--navy);
+        border-top: 1px solid rgba(7,26,43,.06);
+        border-bottom: 1px solid rgba(7,26,43,.06);
+    }
+    .light-band-experiment::before { display: none; }
+    .light-band-experiment h2 { color: var(--navy) !important; }
+    .light-band-experiment p { color: var(--steel) !important; }
+    .light-band-experiment .flow-dark .flow-step h4 { color: var(--navy); }
+    .light-band-experiment .flow-dark .flow-step p { color: var(--steel); }
+    .light-band-experiment .flow-dark .flow-icon { background: var(--light-grey); }
+
+    .navy-band-experiment {
+        background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+        color: var(--white);
+    }
+    .navy-band-experiment .section-header h2,
+    .navy-band-experiment .section-header p { color: var(--white); }
+    .navy-band-experiment .section-header .eyebrow { color: var(--gold); }
+    .navy-band-experiment .flow-step h4 { color: var(--gold); }
+    .navy-band-experiment .flow-step p { color: var(--metallic); }
+    .navy-band-experiment .flow-icon { background: rgba(255,255,255,.07); }
+    .navy-band-experiment .flow-step:not(:last-child)::after { color: var(--gold); }
+    @media (max-width: 768px) {
+        .division-hero { background-position: center, center, 58% center; }
+    }
+
+</style>
 <base target="_blank">
 </head>
 <body>
@@ -554,7 +600,7 @@
     </section>
 
     <!-- One Risk Perspective -->
-    <section class="dark-band">
+    <section class="dark-band light-band-experiment">
         <div class="dark-band-inner">
             <div class="section-header animate-on-scroll" style="margin-bottom: 2rem;">
                 <div class="eyebrow">One risk perspective. Three connected capabilities.</div>
@@ -588,7 +634,7 @@
     </section>
 
     <!-- How We Work -->
-    <section class="bg-alt">
+    <section class="bg-alt navy-band-experiment">
         <div class="section">
             <div class="section-header animate-on-scroll">
                 <div class="eyebrow">How We Work</div>
