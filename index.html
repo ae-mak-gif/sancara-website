@@ -25,7 +25,7 @@
         "name": "Sancara",
         "slogan": "Specialty Risk Advisory | Claims Management & Loss Adjusting | InsurTech",
         "description": "Sancara provides specialty risk advisory, claims management and loss adjusting, and insurance process intelligence and automation. Areas of expertise include cyber security, climate-related risks, agriculture, complex engineering, multidisciplinary risks and claims, business interruption and insurance workflow improvement.",
-        "email": ["info@sancara.co.zw", "intelligence@sancara.co.zw"],
+        "email": "info@sancara.co.zw",
         "url": "https://www.sancara.co.zw/",
         "areaServed": "Southern Africa",
         "knowsAbout": ["Specialty Risk Advisory", "Cyber Security Risk", "Climate-Related Risk", "Agricultural Risk", "Complex Engineering Risk", "Multidisciplinary Risks and Claims", "Claims Management", "Loss Adjusting", "Business Interruption", "Loss Quantification", "Insurance Process Intelligence", "Insurance Process Automation", "AI-Assisted Insurance Workflows", "Emerging Risk", "Climate Scenario Analysis", "Resilience"],
@@ -181,8 +181,9 @@
         .dark-band p { color: var(--metallic); margin-bottom: 2rem; font-size: 1.05rem; }
 
         /* ── Practice page hero ─────────────────────── */
-        .division-hero { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--steel) 100%); padding: 10rem 2rem 5rem; text-align: center; color: var(--white); position: relative; overflow: hidden; }
-        .division-hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(254, 193, 14, 0.08) 0%, transparent 70%); pointer-events: none; }
+        .division-hero { background-color: var(--navy); background-image: linear-gradient(90deg, rgba(7,26,43,.64) 0%, rgba(7,26,43,.40) 58%, rgba(7,26,43,.22) 100%), linear-gradient(0deg, rgba(7,26,43,.25), rgba(7,26,43,.12)), url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=85"); background-size: cover; background-position: center 54%; padding: 10rem 2rem 5rem; text-align: center; color: var(--white); position: relative; overflow: hidden; isolation: isolate; }
+        .division-hero::before { content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 34px, rgba(212,175,55,.34) 35px, transparent 36px 52px); opacity: .72; mask-image: linear-gradient(90deg, transparent 8%, #000 52%, #000 100%); -webkit-mask-image: linear-gradient(90deg, transparent 8%, #000 52%, #000 100%); }
+        .division-hero > * { position: relative; z-index: 1; }
         .division-hero .hero-tagline { opacity: 1; animation: none; }
         .division-hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem; position: relative; }
         .division-hero p { max-width: 800px; margin: 0 auto; opacity: 0.9; font-size: 1.08rem; color: var(--metallic); position: relative; }
@@ -363,8 +364,8 @@
         align-items: center;
         background-color: var(--navy);
         background-image:
-            linear-gradient(90deg, rgba(7,26,43,.94) 0%, rgba(7,26,43,.82) 38%, rgba(7,26,43,.45) 72%, rgba(7,26,43,.24) 100%),
-            linear-gradient(0deg, rgba(7,26,43,.58) 0%, transparent 46%, rgba(7,26,43,.22) 100%),
+            linear-gradient(90deg, rgba(7,26,43,.68) 0%, rgba(7,26,43,.48) 38%, rgba(7,26,43,.18) 72%, rgba(7,26,43,.08) 100%),
+            linear-gradient(0deg, rgba(7,26,43,.32) 0%, transparent 46%, rgba(7,26,43,.10) 100%),
             url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85");
         background-position: center, center, center 54%;
         background-size: cover;
@@ -378,10 +379,10 @@
             linear-gradient(135deg, transparent 48%, rgba(47,107,255,.07) 100%);
     }
     .hero-topography {
-        position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .32;
-        background-image: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 38px, rgba(212,175,55,.24) 39px, transparent 40px 58px);
-        mask-image: linear-gradient(90deg, transparent 20%, #000 72%, #000 100%);
-        -webkit-mask-image: linear-gradient(90deg, transparent 20%, #000 72%, #000 100%);
+        position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .62;
+        background-image: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 32px, rgba(212,175,55,.42) 33px, transparent 34px 50px);
+        mask-image: linear-gradient(90deg, transparent 12%, #000 55%, #000 100%);
+        -webkit-mask-image: linear-gradient(90deg, transparent 12%, #000 55%, #000 100%);
     }
     .hero-content {
         width: min(100%, 1240px); max-width: 1240px; margin: 0 auto; padding: 10rem clamp(1.4rem, 7vw, 7rem) 7rem;
@@ -437,11 +438,13 @@
         .nav-links { gap: 1.15rem; }
     }
     @media (max-width: 700px) {
+        .division-hero { background-position: 58% center; padding-left: 1.25rem; padding-right: 1.25rem; }
+
         .hero.hero-photo {
             min-height: 760px; min-height: max(760px, 92svh);
             background-image:
-                linear-gradient(90deg, rgba(7,26,43,.91), rgba(7,26,43,.68)),
-                linear-gradient(0deg, rgba(7,26,43,.5), transparent 70%),
+                linear-gradient(90deg, rgba(7,26,43,.72), rgba(7,26,43,.42)),
+                linear-gradient(0deg, rgba(7,26,43,.34), transparent 70%),
                 url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80");
             background-position: center, center, 58% center;
         }
@@ -488,7 +491,6 @@
             <li><a data-nav="who-we-serve" onclick="showPage('who-we-serve')">Who We Serve</a></li>
             <li><a data-nav="insights" onclick="showPage('insights')">Insights</a></li>
             <li><a data-nav="about" onclick="showPage('about')">About</a></li>
-            <li><a data-nav="careers" onclick="showPage('careers')">Careers</a></li>
             <li><a data-nav="contact" onclick="showPage('contact')">Contact</a></li>
             <li><a class="nav-cta" onclick="showPage('contact')">Talk to Sancara</a></li>
         </ul>
@@ -1096,56 +1098,6 @@
     </section>
 </div>
 
-<!-- ══════════════════ CAREERS ══════════════════ -->
-<div id="careers" class="page-section">
-    <div class="division-hero">
-        <div class="hero-tagline">Careers</div>
-        <h1>Build specialist capability.</h1>
-        <p>Sancara works across three capability tracks. Specific vacancies will be advertised when roles open.</p>
-    </div>
-    <section class="section">
-        <div class="card-grid">
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                <h3>Specialty Claims &amp; Risk</h3>
-                <p class="practice-tagline">Potential roles: Analyst / Loss Adjusting track</p>
-                <ul class="track-list">
-                    <li><i class="fas fa-circle"></i>Claims investigation</li>
-                    <li><i class="fas fa-circle"></i>Technical loss assessment</li>
-                    <li><i class="fas fa-circle"></i>Quantum / business interruption</li>
-                    <li><i class="fas fa-circle"></i>Emerging-loss analysis</li>
-                </ul>
-            </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-microchip"></i></div>
-                <h3>Insurance Process &amp; Automation</h3>
-                <p class="practice-tagline">Potential roles: Process / AI / Automation track</p>
-                <ul class="track-list">
-                    <li><i class="fas fa-circle"></i>Process mapping</li>
-                    <li><i class="fas fa-circle"></i>Business process automation</li>
-                    <li><i class="fas fa-circle"></i>AI-assisted insurance workflows</li>
-                    <li><i class="fas fa-circle"></i>Prototyping &amp; experimentation</li>
-                </ul>
-            </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-cloud-sun-rain"></i></div>
-                <h3>Climate &amp; Sustainability Risk</h3>
-                <p class="practice-tagline">Potential roles: Climate / ESG / Resilience track</p>
-                <ul class="track-list">
-                    <li><i class="fas fa-circle"></i>Climate risk assessment</li>
-                    <li><i class="fas fa-circle"></i>Scenario / risk analysis</li>
-                    <li><i class="fas fa-circle"></i>ESG / sustainability information</li>
-                    <li><i class="fas fa-circle"></i>Resilience / adaptation</li>
-                </ul>
-            </div>
-        </div>
-        <div class="animate-on-scroll" style="max-width: 850px; margin: 3rem auto 0; text-align: center; background: var(--light-grey); border-radius: 12px; padding: 2rem;">
-            <p style="color: var(--steel); font-size: 0.95rem;">Specific vacancies will be advertised when roles open. If your expertise fits one of these capability tracks, you can still introduce yourself.</p>
-            <button class="btn btn-primary" style="margin-top: 1.5rem;" onclick="showPage('contact')"><i class="fas fa-user-plus"></i> Introduce Yourself</button>
-        </div>
-    </section>
-</div>
-
 <!-- ══════════════════ CONTACT ══════════════════ -->
 <div id="contact" class="page-section">
     <div class="division-hero">
@@ -1175,8 +1127,6 @@
             <div class="animate-on-scroll">
                 <div class="section-header" style="text-align: left; margin-bottom: 2rem;"><h2 style="font-size: 1.6rem;">Get in touch.</h2><div class="gold-line" style="margin: 1rem 0;"></div></div>
                 <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-envelope"></i></div><div class="contact-details"><h4>General Email</h4><p><a href="mailto:info@sancara.co.zw" style="color: var(--steel);">info@sancara.co.zw</a></p></div></div>
-                <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-brain"></i></div><div class="contact-details"><h4>Intelligence / Insights</h4><p><a href="mailto:intelligence@sancara.co.zw" style="color: var(--steel);">intelligence@sancara.co.zw</a></p></div></div>
-                <div class="contact-info-item"><div class="contact-icon"><i class="fas fa-globe"></i></div><div class="contact-details"><h4>Website</h4><p><a href="https://www.sancara.co.zw" target="_blank" rel="noopener" style="color: var(--steel);">www.sancara.co.zw</a></p></div></div>
                 <div class="contact-info-item"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><div class="contact-details"><h4>WhatsApp</h4><p><a href="https://wa.me/263787117461" target="_blank" rel="noopener" style="color: var(--steel);">+263 787 117 461</a></p></div></div>
                 <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 0.5rem;">
                     <a class="btn btn-primary btn-sm" href="https://wa.me/263787117461" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
@@ -1228,8 +1178,6 @@
             <p>Helping organisations understand complex risks, make defensible claims decisions and improve insurance operations.</p>
             <p style="margin-top: 1.25rem; line-height: 2;">
                 <a href="mailto:info@sancara.co.zw" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-envelope" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>info@sancara.co.zw</a><br>
-                <a href="mailto:intelligence@sancara.co.zw" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-brain" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>intelligence@sancara.co.zw</a><br>
-                <a href="https://www.sancara.co.zw" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fas fa-globe" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>www.sancara.co.zw</a><br>
                 <a href="https://wa.me/263787117461" target="_blank" rel="noopener" style="color: var(--metallic); text-decoration: none;"><i class="fab fa-whatsapp" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>+263 787 117 461</a><br>
                 <a href="https://www.linkedin.com/company/sancara/" target="_blank" rel="noopener noreferrer" aria-label="Sancara on LinkedIn" style="color: var(--metallic); text-decoration: none;"><i class="fab fa-linkedin" style="color: var(--gold); margin-right: 0.5rem; width: 16px;"></i>LinkedIn</a>
             </p>
@@ -1258,7 +1206,6 @@
             <ul>
                 <li><a onclick="showPage('about')">About</a></li>
                 <li><a onclick="showPage('insights')">Insights</a></li>
-                <li><a onclick="showPage('careers')">Careers</a></li>
                 <li><a onclick="showPage('contact')">Contact</a></li>
             </ul>
         </div>
@@ -1389,10 +1336,10 @@
         var climate = ['climate', 'esg', 'sustainab', 'carbon', 'resilien', 'adapt', 'environment', 'weather', 'heat', 'drought', 'reporting'];
         var contact = ['contact', 'whatsapp', 'email', 'phone', 'call', 'human', 'person', 'speak', 'talk to'];
         function hasAny(arr) { return arr.some(function (k) { return msg.indexOf(k) !== -1; }); }
-        var routes = '<br><br>You can also reach us directly: <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> · <a href="mailto:intelligence@sancara.co.zw">intelligence@sancara.co.zw</a> · <a href="https://wa.me/263787117461" target="_blank" rel="noopener">WhatsApp +263 787 117 461</a>';
+        var routes = '<br><br>You can also reach us directly: <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> · <a href="https://wa.me/263787117461" target="_blank" rel="noopener">WhatsApp +263 787 117 461</a>';
 
         if (hasAny(contact)) {
-            return 'You can reach the Sancara team directly: <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> (general) or <a href="mailto:intelligence@sancara.co.zw">intelligence@sancara.co.zw</a> (insights). For a quick response, message us on <a href="https://wa.me/263787117461" target="_blank" rel="noopener">WhatsApp +263 787 117 461</a>.';
+            return 'You can reach the Sancara team directly: <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> (general). For a quick response, message us on <a href="https://wa.me/263787117461" target="_blank" rel="noopener">WhatsApp +263 787 117 461</a>.';
         }
         if (hasAny(claims)) {
             return 'It sounds like a <strong>specialty risk or complex claim</strong>. Sancara provides specialty risk advisory across cyber security, climate-related risks, agriculture, complex engineering and multidisciplinary exposures, alongside claims investigation, damage assessment, business interruption and loss quantification. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Discuss a Complex Risk or Claim</a>.' + routes;
@@ -1404,7 +1351,7 @@
             return 'It sounds like a <strong>climate-related or environmental risk</strong> question. These topics sit within Sancara’s Specialty Risk Advisory capability and can include climate hazard and exposure analysis, scenario analysis, operational disruption and resilience considerations. The best next step is <a onclick="showPage(\'contact\'); toggleChat()">Discuss a Specialty Risk</a>.' + routes;
         }
         if (msg.indexOf('career') !== -1 || msg.indexOf('job') !== -1) {
-            return 'For careers, we work across three capability tracks: Specialty Risk Advisory; Claims Management &amp; Loss Adjusting; and InsurTech – Insurance Process Intelligence &amp; Automation. Specific vacancies are advertised when roles open — see the <a onclick="showPage(\'careers\'); toggleChat()">Careers</a> page.' + routes;
+            return 'Thank you for your interest in Sancara. Please use the contact page to send a general enquiry.' + routes;
         }
         return 'I can point you to the right Sancara capability: a <strong>specialty risk</strong>, a <strong>complex claim</strong>, or an <strong>insurance process</strong> challenge. Or <a onclick="showPage(\'contact\'); toggleChat()">Talk to Sancara</a> directly.' + routes;
     }
