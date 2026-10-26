@@ -560,7 +560,6 @@
             </div>
             <div class="hero-proofline"><span></span> Specialty Risk Advisory <b>·</b> Claims Management &amp; Loss Adjusting <b>·</b> InsurTech – Insurance Process Intelligence &amp; Automation</div>
         </div>
-        <div class="hero-scroll-cue" aria-hidden="true"><span></span> Explore Sancara</div>
     </section>
 
     <!-- Three Practices -->
@@ -586,7 +585,7 @@
                 <h3>Claims Management &amp; Loss Adjusting</h3>
                 <div class="practice-tagline">Establish what the evidence supports.</div>
                 <p>We investigate causes, assess damage and business interruption, and quantify losses using the available evidence.</p>
-                <a class="card-cta" onclick="showPage('claims-management')">Explore Claims Management <i class="fas fa-arrow-right"></i></a>
+                <a class="card-cta" onclick="showPage('claims-management')">Explore claims support <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="card animate-on-scroll">
                 <div class="practice-num">03</div>
@@ -595,7 +594,8 @@
                 <div class="practice-tagline">Transform risk processes.</div>
                 <p>We map insurance work, identify avoidable manual steps and assess where process changes, automation or AI may help.</p>
                 <a class="card-cta" onclick="showPage('insurance-process')">Explore Insurance Process Intelligence <i class="fas fa-arrow-right"></i></a>
-            </div></div>
+            </div>
+        </div>
     </section>
 
     <!-- One Risk Perspective -->
@@ -722,7 +722,7 @@
         </div>
         <div class="section-header animate-on-scroll" style="margin-top: 5rem;">
             <div class="eyebrow">Our Approach</div>
-            <h2>Five principles.</h2>
+            <h2>How we work.</h2>
             <div class="gold-line"></div>
         </div>
         <div class="card-grid">
@@ -886,7 +886,7 @@
             <div class="card animate-on-scroll">
                 <div class="card-icon"><i class="fas fa-file-import"></i></div>
                 <h3>Claims Process Automation</h3>
-                <p>Identify and automate repetitive claims activities:</p>
+                <p>Reduce routine work across:</p>
                 <ul class="track-list">
                     <li><i class="fas fa-circle"></i>Document intake &amp; data extraction</li>
                     <li><i class="fas fa-circle"></i>Claims triage &amp; workflow routing</li>
@@ -981,7 +981,7 @@
         </div>
         <div class="section-header animate-on-scroll" style="margin-top: 4rem;">
             <div class="eyebrow">What We Do</div>
-            <h2>Three services.</h2>
+            <h2>How we help.</h2>
             <div class="gold-line"></div>
         </div>
         <div class="card-grid">
@@ -1064,7 +1064,7 @@
             <div class="eyebrow">The Insight Model</div>
             <h2>Signal. Evidence. Analysis. Impact. Response.</h2>
             <div class="gold-line"></div>
-            <p>We move from a relevant development to evidence, analysis and practical implications.</p>
+            <p>We explain what has changed, what the evidence shows and why it matters.</p>
         </div>
         <div class="flow-container animate-on-scroll" style="max-width: 1000px; margin: 0 auto;">
             <div class="flow-step"><div class="flow-icon"><i class="fas fa-tower-broadcast"></i></div><h4>Signal</h4><p>What is changing?</p></div>
@@ -1149,19 +1149,19 @@
     </div>
     <section class="section">
         <div style="max-width: 900px; margin: 0 auto 4rem;">
-            <div class="pathway-card animate-on-scroll" onclick="selectEnquiryType('Specialty & Emerging Risk Claims')">
+            <div class="pathway-card animate-on-scroll" onclick="selectEnquiryType('Claims Management &amp; Loss Adjusting')">
                 <div class="contact-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                <div><h4>Complex Claim</h4><p>Investigate the cause, assess damage or business interruption, and quantify the loss.</p></div>
+                <div><h4>Claims Management &amp; Loss Adjusting</h4><p>Investigate the cause, assess damage or business interruption, and quantify the loss.</p></div>
                 <i class="fas fa-arrow-right pathway-arrow"></i>
             </div>
             <div class="pathway-card animate-on-scroll" onclick="selectEnquiryType('Insurance Process Intelligence & Automation')">
                 <div class="contact-icon"><i class="fas fa-gears"></i></div>
-                <div><h4>Insurance Process</h4><p>Map workflows and identify practical ways to reduce repetitive manual work.</p></div>
+                <div><h4>Insurance Process Intelligence &amp; Automation</h4><p>Map workflows and identify practical ways to reduce repetitive manual work.</p></div>
                 <i class="fas fa-arrow-right pathway-arrow"></i>
             </div>
-            <div class="pathway-card animate-on-scroll" onclick="selectEnquiryType('Sustainability & Climate Risk')">
-                <div class="contact-icon"><i class="fas fa-cloud-sun-rain"></i></div>
-                <div><h4>Climate &amp; Sustainability Risk</h4><p>Assess climate exposure and consider implications for assets, operations and resilience.</p></div>
+            <div class="pathway-card animate-on-scroll" onclick="selectEnquiryType('Specialty Risk Advisory')">
+                <div class="contact-icon"><i class="fas fa-shield-halved"></i></div>
+                <div><h4>Specialty Risk Advisory</h4><p>Assess cyber, climate, engineering and other specialist risks affecting assets and operations.</p></div>
                 <i class="fas fa-arrow-right pathway-arrow"></i>
             </div>
         </div>
@@ -1196,14 +1196,14 @@
                             <select id="ctType">
                                 <option>Specialty Risk Advisory / Claims Management &amp; Loss Adjusting</option>
                                 <option>Insurance Process Intelligence &amp; Automation</option>
-                                <option>Sustainability &amp; Climate Risk</option>
+                                <option>Claims Management &amp; Loss Adjusting</option>
                                 <option>Research / Analysis</option>
                                 <option>Other</option>
                             </select>
                         </div>
                         <div class="form-group"><label for="ctMsg">What can Sancara help you with?</label><textarea id="ctMsg" rows="4" required placeholder="Tell us what you're dealing with..."></textarea></div>
                         <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fas fa-paper-plane"></i> Talk to Sancara</button>
-                        <p id="formSuccess" style="display: none; margin-top: 1rem; background: rgba(74,222,128,0.15); border: 1px solid rgba(74,222,128,0.4); color: #166534; padding: 0.875rem 1.25rem; border-radius: 8px; font-size: 0.88rem;" role="status"><i class="fas fa-envelope"></i> Your email app should open with your enquiry ready to send. If it does not, email <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a> directly.</p>
+                        <p id="formSuccess" style="display: none; margin-top: 1rem; background: rgba(74,222,128,0.15); border: 1px solid rgba(74,222,128,0.4); color: #166534; padding: 0.875rem 1.25rem; border-radius: 8px; font-size: 0.88rem;" role="status"><i class="fas fa-envelope"></i> Your email app should open with your enquiry ready to send. This form prepares an email; it does not submit directly to Sancara. If your email app does not open, email <a href="mailto:info@sancara.co.zw">info@sancara.co.zw</a>.</p>
                     </form>
                 </div>
             </div>
@@ -1363,7 +1363,7 @@
             '',
             'Enquiry:',
             message
-        ].join('\\n');
+        ].join('\n');
         document.getElementById('formSuccess').style.display = 'block';
         document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         window.location.href = 'mailto:info@sancara.co.zw?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
