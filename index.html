@@ -367,7 +367,7 @@
         justify-content: flex-start;
         align-items: center;
         background-color: var(--navy);
-        background-image: url("assets/sancara-insurance-advisory-claims-insurtech-zimbabwe-2.jpg");
+        background-image: url("assets/sancara-insurance-advisory-claims-insurtech-zimbabwe-3.png");
         background-position: 62% center;
         background-size: cover;
         isolation: isolate;
@@ -446,7 +446,7 @@
 
         .hero.hero-photo {
             min-height: 760px; min-height: max(760px, 92svh);
-            background-image: url("assets/sancara-insurance-advisory-claims-insurtech-zimbabwe.png");
+            background-image: url("assets/sancara-insurance-advisory-claims-insurtech-zimbabwe-3.png");
             background-position: 35% center;
         }
         .hero-content { padding: 8.5rem 1.35rem 5.5rem; }
@@ -543,7 +543,8 @@
     .hero-service-links {
         position: absolute;
         top: clamp(5.5rem, 12vh, 8.5rem);
-        left: clamp(1.35rem, 5vw, 5rem);
+        right: clamp(1.35rem, 5vw, 5rem);
+        left: auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -584,7 +585,8 @@
     .hero.hero-photo .hero-service-link:focus-visible::after { height: 3px; }
     .hero.hero-photo .hero-services-content .hero-buttons {
         position: absolute;
-        left: clamp(1.35rem, 5vw, 5rem);
+        right: clamp(1.35rem, 5vw, 5rem);
+        left: auto;
         bottom: clamp(1.5rem, 5vh, 3.5rem);
         opacity: 1;
         animation: none;
@@ -596,13 +598,15 @@
     @media (max-width: 768px) {
         .hero-service-links {
             top: clamp(5.5rem, 10vh, 7rem);
-            left: 1.35rem;
+            right: 1.35rem;
+            left: auto;
             max-width: calc(100% - 2.7rem);
             gap: .8rem;
         }
         .hero.hero-photo .hero-service-link { font-size: 1rem; }
         .hero.hero-photo .hero-services-content .hero-buttons {
-            left: 1.35rem;
+            right: 1.35rem;
+            left: auto;
             bottom: 1.5rem;
             align-items: flex-start;
         }
