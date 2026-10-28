@@ -508,7 +508,21 @@
         .division-hero { background-position: center, center, 58% center; }
     }
 
-</style>
+
+        /* Sancara icon colours: Neutral Gold + Intelligence Blue */
+        .logo-img { box-shadow: 0 0 0 1px rgba(47, 107, 255, 0.38), 0 2px 8px rgba(0, 0, 0, 0.3); }
+        .card-icon, .contact-icon {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--intelligence-blue) 100%);
+            color: var(--gold);
+        }
+        .card::before { background: linear-gradient(90deg, var(--gold) 0%, var(--intelligence-blue) 100%); }
+        .gold-line { background: linear-gradient(90deg, var(--gold) 0%, var(--intelligence-blue) 100%); }
+        .service-item { border-left-color: var(--intelligence-blue); }
+        .service-item:hover { border-left-color: var(--gold); }
+        .nav-links > li > a::after { background: linear-gradient(90deg, var(--gold), var(--intelligence-blue)); }
+        .logo:hover .logo-img { box-shadow: 0 0 0 2px rgba(47, 107, 255, 0.55), 0 2px 10px rgba(0, 0, 0, 0.35); }
+
+    </style>
 <base target="_blank">
 </head>
 <body>
