@@ -367,8 +367,8 @@
         justify-content: flex-start;
         align-items: center;
         background-color: var(--navy);
-        background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85");
-        background-position: center, center, center 54%;
+        background-image: url("assets/sancara-insurance-advisory-claims-insurtech-zimbabwe.png");
+        background-position: 62% center;
         background-size: cover;
         isolation: isolate;
     }
@@ -377,6 +377,11 @@
         position: absolute; inset: 0; z-index: 0; pointer-events: none;
         background: none;
     }
+    .hero.hero-photo .hero-subtitle,
+    .hero.hero-photo .hero-proofline { color: var(--navy); }
+    .hero.hero-photo .hero-proofline b { color: var(--mineral-blue); }
+    .hero.hero-photo .btn-secondary { color: var(--navy); border-color: rgba(7,26,43,.55); }
+    .hero.hero-photo .btn-secondary:hover { color: var(--navy); border-color: var(--gold); background: rgba(255,255,255,.72); }
     .hero-topography {
         position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .62;
         background-image: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 32px, rgba(212,175,55,.42) 33px, transparent 34px 50px);
@@ -430,7 +435,7 @@
         outline: 2px solid var(--intelligence-blue); outline-offset: 3px;
     }
     @media (max-width: 900px) {
-        .hero.hero-photo { min-height: max(680px, 88svh); background-position: center, center, 58% center; }
+        .hero.hero-photo { min-height: max(680px, 88svh); background-position: 62% center; }
         .hero-content { padding-top: 9rem; padding-bottom: 6.5rem; }
         .hero h1 { font-size: clamp(2rem, 5.2vw, 3rem); }
         .hero-scroll-cue { display: none; }
@@ -441,8 +446,8 @@
 
         .hero.hero-photo {
             min-height: 760px; min-height: max(760px, 92svh);
-            background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80");
-            background-position: center, center, 58% center;
+            background-image: url("assets/sancara-insurance-advisory-claims-insurtech-zimbabwe.png");
+            background-position: 35% center;
         }
         .hero-content { padding: 8.5rem 1.35rem 5.5rem; }
         .hero h1 { font-size: clamp(1.75rem, 6.5vw, 2.35rem); line-height: 1.18; letter-spacing: -.025em; }
