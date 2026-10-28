@@ -559,15 +559,15 @@
         align-items: flex-start;
         width: fit-content;
         max-width: 100%;
-        color: var(--white);
+        color: #E7C66A;
         text-decoration: none;
         font-size: clamp(1rem, 2vw, 1.2rem);
         line-height: 1.55;
         font-weight: 500;
         letter-spacing: 0;
         cursor: pointer;
-        text-shadow: 0 2px 12px rgba(0,0,0,.32);
-        transition: color .2s ease;
+        text-shadow: 0 0 10px rgba(198,161,91,.24), 0 2px 12px rgba(0,0,0,.48);
+        transition: color .2s ease, text-shadow .2s ease;
     }
     .hero.hero-photo .hero-service-link::after {
         content: "";
@@ -580,7 +580,7 @@
         transition: height .2s ease, opacity .2s ease;
     }
     .hero.hero-photo .hero-service-link:hover,
-    .hero.hero-photo .hero-service-link:focus-visible { color: var(--gold); }
+    .hero.hero-photo .hero-service-link:focus-visible { color: #FFE7A0; text-shadow: 0 0 14px rgba(255,215,120,.48), 0 2px 12px rgba(0,0,0,.5); }
     .hero.hero-photo .hero-service-link:hover::after,
     .hero.hero-photo .hero-service-link:focus-visible::after { height: 3px; }
     .hero.hero-photo .hero-services-content .hero-buttons {
@@ -594,7 +594,21 @@
         margin: 0;
         pointer-events: auto;
     }
-    .hero.hero-photo .hero-services-content .btn-secondary { text-transform: none; }
+    .hero.hero-photo .hero-services-content .btn-secondary {
+        text-transform: none;
+        color: #FFFFFF;
+        background: linear-gradient(135deg, #164A6E 0%, #2478B8 55%, #2F6BFF 100%);
+        border: 1px solid rgba(112,190,255,.95);
+        box-shadow: 0 0 12px rgba(47,107,255,.62), 0 0 28px rgba(36,120,184,.45), inset 0 0 10px rgba(255,255,255,.10);
+        text-shadow: 0 1px 4px rgba(0,0,0,.35);
+    }
+    .hero.hero-photo .hero-services-content .btn-secondary:hover,
+    .hero.hero-photo .hero-services-content .btn-secondary:focus-visible {
+        background: linear-gradient(135deg, #1D5F8B 0%, #2F8ED0 55%, #5287FF 100%);
+        border-color: #C5E7FF;
+        box-shadow: 0 0 16px rgba(72,151,255,.82), 0 0 36px rgba(36,120,184,.62), inset 0 0 12px rgba(255,255,255,.16);
+        transform: translateY(-2px);
+    }
     @media (max-width: 768px) {
         .hero-service-links {
             top: clamp(5.5rem, 10vh, 7rem);
