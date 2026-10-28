@@ -527,7 +527,63 @@
         .nav-links > li > a::after { background: linear-gradient(90deg, var(--gold), var(--intelligence-blue)); }
         .logo:hover .logo-img { box-shadow: 0 0 0 2px rgba(47, 107, 255, 0.55), 0 2px 10px rgba(0, 0, 0, 0.35); }
 
-    </style>
+     
+    /* Minimal homepage hero: service links only, with the existing single CTA. */
+    .hero.hero-photo .hero-services-content {
+        max-width: 760px;
+        margin-left: clamp(0rem, 4vw, 4rem);
+        margin-right: auto;
+        text-align: left;
+        padding-top: 8rem;
+        padding-bottom: 5rem;
+    }
+    .hero-service-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.05rem;
+        margin: 0 0 2.25rem;
+    }
+    .hero.hero-photo .hero-service-link {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        max-width: 100%;
+        color: var(--white);
+        text-decoration: none;
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        line-height: 1.55;
+        font-weight: 500;
+        letter-spacing: 0;
+        cursor: pointer;
+        text-shadow: 0 2px 12px rgba(0,0,0,.32);
+        transition: color .2s ease;
+    }
+    .hero.hero-photo .hero-service-link::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-top: .3rem;
+        background: linear-gradient(90deg, var(--intelligence-blue) 0%, var(--intelligence-blue) 48%, var(--gold) 100%);
+        transform-origin: left;
+        transition: height .2s ease, opacity .2s ease;
+    }
+    .hero.hero-photo .hero-service-link:hover,
+    .hero.hero-photo .hero-service-link:focus-visible { color: var(--gold); }
+    .hero.hero-photo .hero-service-link:hover::after,
+    .hero.hero-photo .hero-service-link:focus-visible::after { height: 3px; }
+    .hero.hero-photo .hero-services-content .hero-buttons { opacity: 1; animation: none; justify-content: flex-start; }
+    .hero.hero-photo .hero-services-content .btn-secondary { text-transform: none; }
+    @media (max-width: 768px) {
+        .hero.hero-photo .hero-services-content { margin: 0; padding: 8rem 1.35rem 5.5rem; }
+        .hero-service-links { gap: .8rem; margin-bottom: 1.8rem; }
+        .hero.hero-photo .hero-service-link { font-size: 1rem; }
+        .hero.hero-photo .hero-services-content .hero-buttons { align-items: flex-start; }
+    }
+
+</style>
 <base target="_blank">
 </head>
 <body>
@@ -565,13 +621,15 @@
     <!-- Hero: full-width photographic treatment; existing site functionality retained -->
     <section class="hero hero-photo">
         <div class="hero-topography" aria-hidden="true"></div>
-        <div class="hero-content">
-            <p class="hero-subtitle">Our advice draws on technical analysis, claims experience and technology.</p>
+        <div class="hero-content hero-services-content">
+            <nav class="hero-service-links" aria-label="Our services">
+                <a class="hero-service-link" onclick="showPage('insurance-process')" href="#insurance-process">InsurTech</a>
+                <a class="hero-service-link" onclick="showPage('claims')" href="#claims">Specialty Risk Advisory</a>
+                <a class="hero-service-link" onclick="showPage('claims-management')" href="#claims-management">Claims Management and Loss Adjusting</a>
+            </nav>
             <div class="hero-buttons">
-                <button class="btn btn-secondary" onclick="showPage('claims')"><i class="fas fa-th-large"></i> Explore Our Capabilities</button>
-                <button class="btn btn-primary" onclick="showPage('contact')"><i class="fas fa-arrow-right"></i> Get in Touch</button>
+                <button class="btn btn-secondary" onclick="showPage('claims')">Explore our capabilities</button>
             </div>
-            <div class="hero-proofline"><span></span> Claims Management &amp; Loss Adjusting <b>·</b> InsurTech – Insurance Process Intelligence &amp; Automation <b>·</b> Specialty, Emerging &amp; Niche Risks’ Advisory</div>
         </div>
     </section>
 
