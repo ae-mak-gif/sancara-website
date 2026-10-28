@@ -530,19 +530,27 @@
      
     /* Minimal homepage hero: service links only, with the existing single CTA. */
     .hero.hero-photo .hero-services-content {
-        max-width: 760px;
-        margin-left: clamp(0rem, 4vw, 4rem);
-        margin-right: auto;
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
         text-align: left;
-        padding-top: 8rem;
-        padding-bottom: 5rem;
+        pointer-events: none;
     }
     .hero-service-links {
+        position: absolute;
+        top: clamp(5.5rem, 12vh, 8.5rem);
+        left: clamp(1.35rem, 5vw, 5rem);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.05rem;
-        margin: 0 0 2.25rem;
+        margin: 0;
+        max-width: min(46vw, 620px);
+        pointer-events: auto;
     }
     .hero.hero-photo .hero-service-link {
         display: inline-flex;
@@ -574,13 +582,30 @@
     .hero.hero-photo .hero-service-link:focus-visible { color: var(--gold); }
     .hero.hero-photo .hero-service-link:hover::after,
     .hero.hero-photo .hero-service-link:focus-visible::after { height: 3px; }
-    .hero.hero-photo .hero-services-content .hero-buttons { opacity: 1; animation: none; justify-content: flex-start; }
+    .hero.hero-photo .hero-services-content .hero-buttons {
+        position: absolute;
+        left: clamp(1.35rem, 5vw, 5rem);
+        bottom: clamp(1.5rem, 5vh, 3.5rem);
+        opacity: 1;
+        animation: none;
+        justify-content: flex-start;
+        margin: 0;
+        pointer-events: auto;
+    }
     .hero.hero-photo .hero-services-content .btn-secondary { text-transform: none; }
     @media (max-width: 768px) {
-        .hero.hero-photo .hero-services-content { margin: 0; padding: 8rem 1.35rem 5.5rem; }
-        .hero-service-links { gap: .8rem; margin-bottom: 1.8rem; }
+        .hero-service-links {
+            top: clamp(5.5rem, 10vh, 7rem);
+            left: 1.35rem;
+            max-width: calc(100% - 2.7rem);
+            gap: .8rem;
+        }
         .hero.hero-photo .hero-service-link { font-size: 1rem; }
-        .hero.hero-photo .hero-services-content .hero-buttons { align-items: flex-start; }
+        .hero.hero-photo .hero-services-content .hero-buttons {
+            left: 1.35rem;
+            bottom: 1.5rem;
+            align-items: flex-start;
+        }
     }
 
 </style>
