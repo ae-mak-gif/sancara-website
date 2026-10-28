@@ -383,7 +383,7 @@
     .hero.hero-photo .btn-secondary { color: var(--white); border-color: rgba(255,255,255,.72); background: rgba(7,26,43,.28); }
     .hero.hero-photo .btn-secondary:hover { color: var(--white); border-color: var(--gold); background: rgba(7,26,43,.72); }
     .hero-topography {
-        position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0;
+        position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: .32;
         background-image: repeating-radial-gradient(ellipse at 78% 42%, transparent 0 32px, rgba(212,175,55,.42) 33px, transparent 34px 50px);
         mask-image: linear-gradient(90deg, transparent 12%, #000 55%, #000 100%);
         -webkit-mask-image: linear-gradient(90deg, transparent 12%, #000 55%, #000 100%);
@@ -559,14 +559,14 @@
         align-items: flex-start;
         width: fit-content;
         max-width: 100%;
-        color: #E7C66A;
+        color: #071A2B;
         text-decoration: none;
         font-size: clamp(1rem, 2vw, 1.2rem);
         line-height: 1.55;
         font-weight: 500;
         letter-spacing: 0;
         cursor: pointer;
-        text-shadow: 0 0 10px rgba(198,161,91,.24), 0 2px 12px rgba(0,0,0,.48);
+        text-shadow: none;
         transition: color .2s ease, text-shadow .2s ease;
     }
     .hero.hero-photo .hero-service-link::after {
@@ -575,12 +575,12 @@
         width: 100%;
         height: 2px;
         margin-top: .3rem;
-        background: linear-gradient(90deg, var(--intelligence-blue) 0%, var(--intelligence-blue) 48%, var(--gold) 100%);
+        background: var(--gold);
         transform-origin: left;
         transition: height .2s ease, opacity .2s ease;
     }
     .hero.hero-photo .hero-service-link:hover,
-    .hero.hero-photo .hero-service-link:focus-visible { color: #FFE7A0; text-shadow: 0 0 14px rgba(255,215,120,.48), 0 2px 12px rgba(0,0,0,.5); }
+    .hero.hero-photo .hero-service-link:focus-visible { color: #164A6E; text-shadow: none; }
     .hero.hero-photo .hero-service-link:hover::after,
     .hero.hero-photo .hero-service-link:focus-visible::after { height: 3px; }
     .hero.hero-photo .hero-services-content .hero-buttons {
@@ -597,16 +597,16 @@
     .hero.hero-photo .hero-services-content .btn-secondary {
         text-transform: none;
         color: #FFFFFF;
-        background: linear-gradient(135deg, #164A6E 0%, #2478B8 55%, #2F6BFF 100%);
-        border: 1px solid rgba(112,190,255,.95);
-        box-shadow: 0 0 12px rgba(47,107,255,.62), 0 0 28px rgba(36,120,184,.45), inset 0 0 10px rgba(255,255,255,.10);
-        text-shadow: 0 1px 4px rgba(0,0,0,.35);
+        background: #071A2B;
+        border: 1px solid #071A2B;
+        box-shadow: 0 4px 14px rgba(7,26,43,.18);
+        text-shadow: none;
     }
     .hero.hero-photo .hero-services-content .btn-secondary:hover,
     .hero.hero-photo .hero-services-content .btn-secondary:focus-visible {
-        background: linear-gradient(135deg, #1D5F8B 0%, #2F8ED0 55%, #5287FF 100%);
-        border-color: #C5E7FF;
-        box-shadow: 0 0 16px rgba(72,151,255,.82), 0 0 36px rgba(36,120,184,.62), inset 0 0 12px rgba(255,255,255,.16);
+        background: #164A6E;
+        border-color: var(--gold);
+        box-shadow: 0 5px 18px rgba(7,26,43,.22);
         transform: translateY(-2px);
     }
     @media (max-width: 768px) {
