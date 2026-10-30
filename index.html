@@ -556,8 +556,8 @@
         max-width: min(46vw, 620px);
         pointer-events: auto;
     }
-    .hero-positioning { position: relative; z-index: 2; width: min(48%, 590px); max-width: 590px; padding-top: 2.5rem; }
-    .hero-positioning h1 { color: var(--white); font-size: clamp(2rem, 3.8vw, 3.6rem); line-height: 1.12; letter-spacing: -.035em; font-weight: 600; margin-bottom: 1.35rem; text-wrap: balance; }
+    .hero-positioning { position: relative; z-index: 2; width: min(48%, 590px); max-width: 590px; margin-left: auto; margin-right: clamp(2rem, 7vw, 7rem); padding-top: 2.5rem; }
+    .hero-positioning h1 { color: #000; font-size: clamp(2rem, 3.8vw, 3.6rem); line-height: 1.12; letter-spacing: -.035em; font-weight: 600; margin-bottom: 1.35rem; text-wrap: balance; }
     .hero-positioning .hero-subtitle { color: rgba(255,255,255,.9); font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.75; text-shadow: 0 2px 12px rgba(0,0,0,.3); }
     .hero.hero-photo .hero-service-link {
         display: inline-flex;
@@ -616,6 +616,8 @@
         transform: translateY(-2px);
     }
     @media (max-width: 768px) {
+        .hero-positioning { width: calc(100% - 2.7rem); max-width: 520px; margin-left: auto; margin-right: 1.35rem; padding-top: 1.5rem; }
+        .hero-positioning h1 { color: #000; }
         .hero-service-links {
             top: clamp(5.5rem, 10vh, 7rem);
             right: 1.35rem;
